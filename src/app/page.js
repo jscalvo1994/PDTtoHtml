@@ -1,10 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hola mundo esta sera la pagina de Creativas Publicidad dentro de poco</h1>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        {/* Aquí seguirán los componentes: <Services />, <Portfolio />, etc. */}
+      </main>
+    </>
   );
 }
