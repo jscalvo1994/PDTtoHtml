@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-warning fixed-top shadow-sm">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-main-black border-bottom border-warning fixed-top shadow-sm">
+
             <div className="container">
                 {/* Logo e Identidad */}
                 <Link href="/" className="navbar-brand d-flex align-items-center">

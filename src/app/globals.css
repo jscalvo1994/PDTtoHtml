@@ -36,12 +36,24 @@ a {
   color: #fff;
 }
 
+/* Colores personalizados */
+/* Sección: Estilo global para fondo negro consistente */
+.bg-main-black {
+  background-color: #000 !important;
+}
+
 /* === Texto secundario legible para fondos oscuros === */
 .text-readable {
   color: rgba(255, 255, 255, 0.88);
 }
 
 /*Hero section*/
+.hero-section {
+  padding: 4rem 0;
+  margin-top: 5%;
+  position: relative;
+}
+
 .hero-logo-wrapper {
   position: relative;
   display: inline-block;
