@@ -31,8 +31,7 @@ a {
 }
 
 .bg-main {
-  background: linear-gradient(to bottom right, #0b1a2a, #141d2c);
-  /* mismo que .hero-section */
+  background: linear-gradient(to bottom right, #23282B, #141d2c);
   color: #fff;
 }
 
