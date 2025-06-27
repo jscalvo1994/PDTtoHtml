@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Iconos Bootstrap
 import './globals.css';
-import BootstrapClient from '@/components/BootstrapClient'; // ✅ Aquí lo importas
+import BootstrapClient from '@/components/BootstrapClient';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>
-        <BootstrapClient /> {/* ✅ Aquí lo cargas una sola vez */}
+      <body className="bg-main text-light">
+        <BootstrapClient />
         {children}
       </body>
     </html>

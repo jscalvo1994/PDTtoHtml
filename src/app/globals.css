@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,14 +30,18 @@ a {
   }
 }
 
-.hero-section {
-  padding-top: 140px;
-  /* suficiente para que el logo respire */
+.bg-main {
   background: linear-gradient(to bottom right, #0b1a2a, #141d2c);
-  /* tono similar al fondo azul oscuro */
+  /* mismo que .hero-section */
   color: #fff;
 }
 
+/* === Texto secundario legible para fondos oscuros === */
+.text-readable {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/*Hero section*/
 .hero-logo-wrapper {
   position: relative;
   display: inline-block;
@@ -54,4 +59,117 @@ a {
   border-radius: 50%;
   z-index: 0;
   filter: blur(40px);
+}
+
+.text-muted-custom {
+  color: rgba(255, 255, 255, 0.7);
+  /* mucho más visible que text-secondary */
+}
+
+/*Servicios*/
+
+.service-card {
+  background: linear-gradient(to bottom right, #1e293b, #0f172a);
+  border: 1px solid rgba(255, 193, 7, 0.15);
+  /* Bootstrap warning color semitransparente */
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 193, 7, 0.4);
+}
+
+.icon-gradient {
+  background: linear-gradient(to right, #ffc107, #ff9800);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+/*portafolio*/
+.card-hover {
+  transition: transform 0.3s ease-in-out, border-color 0.3s;
+}
+
+.card-hover:hover {
+  transform: scale(1.03);
+  border-color: #ffc107 !important;
+  /* Amarillo Bootstrap */
+}
+
+.overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.card-hover:hover .overlay-gradient {
+  opacity: 1;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hover:hover img {
+  transform: scale(1.1);
+}
+
+/*ProccessSection*/
+.icon-circle {
+  background: linear-gradient(to right, #f59e0b, #d97706);
+  /* amber-500 to amber-600 */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contact Section */
+.contact-form-custom {
+  background: linear-gradient(to bottom right, #1e293b, #0f172a);
+  /* slate-800 a slate-900 */
+  border: 1px solid rgba(255, 193, 7, 0.2);
+  /* similar a border-amber-500/20 */
+}
+
+/* === Formulario contacto === */
+/* Sección: Contacto */
+.form-control-custom {
+  background-color: #0f172a !important;
+  /* fondo profundo */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control-custom::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  /* placeholder legible */
+}
+
+.form-control-custom:focus {
+  background-color: #0f172a;
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+  color: #fff;
 }

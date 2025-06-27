@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Hero() {
     return (
-        <section className="hero-section text-light text-center">
+        <section className="text-center py-5 hero-section">
             <div className="container">
                 {/* Logo central */}
                 <div className="hero-logo-wrapper mb-4">
@@ -16,11 +16,12 @@ export default function Hero() {
                         priority
                     />
                 </div>
+
                 {/* Título y descripción */}
                 <h1 className="display-4 fw-bold mb-3">
                     Transformamos tus <span className="text-warning">Ideas</span> en <span className="text-warning">Realidad</span>
                 </h1>
-                <p className="lead text-secondary mb-4">
+                <p className="lead text-opacity-75 mb-4">
                     Somos expertos en litografía, estampados personalizados y publicidad integral. Desde el diseño hasta la
                     producción, creamos soluciones visuales que impactan y perduran.
                 </p>
