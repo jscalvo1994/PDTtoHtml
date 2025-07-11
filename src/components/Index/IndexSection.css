@@ -1,0 +1,146 @@
+/* =======================
+   INDEX SECTION
+   ======================= */
+
+.index-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+/* Sección izquierda con imagen */
+.index-left {
+    width: 35%;
+    height: 100vh;
+    position: relative;
+    /* necesario para Image fill */
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sección derecha con contenido */
+.index-right {
+    width: 65%;
+    background: #f5f5f5;
+    padding: 3rem;
+    overflow-y: auto;
+}
+
+/* TÍTULOS SUPERIORES */
+.index-header {
+    margin-bottom: 2rem;
+}
+
+.index-title-block {
+    margin-bottom: 1rem;
+}
+
+.index-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+.index-subtitle {
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+/* LÍNEA + TEXTO A LA DERECHA */
+.index-divider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.index-line {
+    border: none;
+    border-top: 1px solid #aaa;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.index-highlight {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+}
+
+/* CONTENIDO EN 3 COLUMNAS */
+.index-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.index-column {
+    flex: 1;
+}
+
+.index-column h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #222;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.index-column ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
+
+.index-column li {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #111;
+}
+
+.index-column li:hover {
+    background-color: #111;
+    color: #fff;
+    padding-left: 0.5rem;
+    border-radius: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .index-section {
+        flex-direction: column;
+    }
+
+    .index-left {
+        display: none;
+    }
+
+    .index-right {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .index-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .index-column {
+        width: 100%;
+    }
+}

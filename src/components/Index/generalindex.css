@@ -1,0 +1,158 @@
+/* =======================
+   GENERAL INDEX SECTION
+   ======================= */
+
+.general-index {
+    background: url('/bg-index.png') center center / cover no-repeat;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Header */
+.general-index-header {
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+}
+
+.general-index-slogan {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+}
+
+.general-index-divider {
+    border: none;
+    border-top: 2px solid white;
+    margin: 1rem 2rem;
+}
+
+/* Cuerpo principal */
+.general-index-body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Título lateral */
+.general-index-left {
+    width: 100%;
+    max-width: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-right: 1px solid white;
+    padding: 1rem;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+}
+
+.general-index-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.general-index-subtitle {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    margin-top: 1rem;
+    writing-mode: vertical-rl;
+    transform: rotate(360deg);
+}
+
+/* Columnas de contenido */
+.general-index-right {
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.general-index-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.general-index-column h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.general-index-column ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.general-index-column li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.general-index-column li:hover {
+    background: white;
+    color: black;
+    padding-left: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .general-index-body {
+        flex-direction: column;
+    }
+
+    .general-index-left {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+        text-align: center;
+    }
+
+    .general-index-title {
+        font-size: 1.5rem;
+    }
+
+    .general-index-subtitle {
+        writing-mode: horizontal-tb;
+        margin-top: 0.3rem;
+        transform: none;
+        font-size: 0.8rem;
+    }
+
+    .general-index-right {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,164 @@
+/* =======================
+   SOCIAL MEDIA SECTION
+   ======================= */
+
+.social-media {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.social-media-left {
+    width: 35%;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.social-title {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.social-title strong {
+    font-size: 1.4rem;
+}
+
+.social-title em {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+.social-links li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    font-size: 1.4rem;
+    margin-right: 0.8rem;
+}
+
+.social-website {
+    margin-top: auto;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Imagen derecha */
+.social-media-right {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-image {
+    object-fit: cover;
+    z-index: 1;
+}
+
+.social-overlay {
+    position: absolute;
+    bottom: 2rem;
+    left: 70%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 1.2rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111;
+    border-radius: 4px;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+    width: 550px;
+    height: 75px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-image-icon {
+    margin-right: 0.8rem;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    /* Blanco sin importar fondo */
+}
+
+@media (max-width: 768px) {
+    .social-media {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .social-media-left {
+        width: 100%;
+        order: 1;
+        padding: 2rem 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media-right {
+        width: 100%;
+        order: 2;
+        height: 60vh;
+    }
+
+    .social-title {
+        font-size: 1.1rem;
+    }
+
+    .social-title strong {
+        font-size: 1.5rem;
+    }
+
+    .social-title em {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links li {
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .social-website {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .social-overlay {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+        font-size: 1rem;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+}

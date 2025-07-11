@@ -1,14 +1,14 @@
 import Hero from "@/components/Hero/Hero.jsx";
-import IndexSection from "@/components/IndexSection";
-import SocialMedia from "@/components/SocialMedia";
-import GeneralIndex from "@/components/GeneralIndex";
-import BisagrasContent from "@/components/BisagrasContent";
-import BisagrasContent2 from "@/components/BisagrasContent2";
-import GaleriaBisagra from "@/components/GaleriaBisagras";
-import BisagrasContent3 from "@/components/BisagrasContent3";
-import BisagrasContent4 from "@/components/BisagrasContent4";
-import BisagrasContent5 from "@/components/BisagrasContent5";
-import BisagrasContent6 from "@/components/BisagrasContent6";
+import IndexSection from "@/components/Index/IndexSection.jsx";
+import SocialMedia from "@/components/Index/SocialMedia.jsx";
+import GeneralIndex from "@/components/Index/GeneralIndex.jsx";
+import BisagrasContent from "@/components/Bisagras/BisagrasContent";
+import BisagrasContent2 from "@/components/Bisagras/BisagrasContent2";
+import GaleriaBisagra from "@/components/Galerias/GaleriaBisagras";
+import BisagrasContent3 from "@/components/Bisagras/BisagrasContent3";
+import BisagrasContent4 from "@/components/Bisagras/BisagrasContent4";
+import BisagrasContent5 from "@/components/Bisagras/BisagrasContent5";
+import BisagrasContent6 from "@/components/Bisagras/BisagrasContent6";
 export default function Home() {
   return (
     <>
