@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero/Hero.jsx";
 import IndexSection from "@/components/IndexSection";
 import SocialMedia from "@/components/SocialMedia";
 import GeneralIndex from "@/components/GeneralIndex";
