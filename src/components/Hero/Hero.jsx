@@ -33,7 +33,7 @@ export default function Hero() {
 
           <div className="hero-top-center">
             <Image
-              src="/LogoCentral.png"
+              src="/logo1.png"
               alt="Logo central metálico"
               fill
               className="hero-logo-image"
