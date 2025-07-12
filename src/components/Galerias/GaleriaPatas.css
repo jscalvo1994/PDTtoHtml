@@ -1,0 +1,194 @@
+/* =======================
+   GALERIA PATAS - GENERAL
+   ======================= */
+
+.galeria-patas-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =======================
+   TÍTULO GALERIA COMPACTO
+   ======================= */
+
+.galeria-patas-titulo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.grupo-titulo {
+    display: flex;
+    align-items: left;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.titulo-bold {
+    font-weight: bold;
+}
+
+.titulo-light {
+    font-weight: normal;
+    color: #444;
+    margin-left: 0.3rem;
+}
+
+.grupo-subtitulo {
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 0.3rem;
+}
+
+.subprincipal {
+    font-size: 1rem;
+    color: #000;
+    margin: 0;
+}
+
+.subsecundario {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
+
+/* =======================
+   SECCIÓN 2 Y 3 - CONTENIDO
+   ======================= */
+
+.galeria-patas-content {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+}
+
+/* MITADES */
+.galeria-patas-izquierda,
+.galeria-patas-derecha {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECCIONES SUPERIORES (IMÁGENES) */
+.izquierda-superior,
+.derecha-superior {
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* o 'contain' en la derecha */
+}
+
+.izquierda-superior {
+    background-image: url('/galeria/PatasGaleria.png');
+
+}
+
+.derecha-superior {
+    background-image: url('/galeria/PataDetalle.png');
+    background-size: contain;
+}
+
+/* SECCIONES INFERIORES */
+.izquierda-inferior {
+    height: 25vh;
+}
+
+.derecha-inferior {
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2% 3%;
+    box-sizing: border-box;
+}
+
+.descripcion {
+    width: 70%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+}
+
+.qr-final {
+    width: 100px;
+}
+
+/* =======================
+   RESPONSIVE - MOBILE VIEW
+   ======================= */
+
+@media screen and (max-width: 768px) {
+    .galeria-patas-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .galeria-patas-izquierda,
+    .galeria-patas-derecha {
+        width: 100%;
+    }
+
+    .izquierda-superior,
+    .derecha-superior {
+        width: 90%;
+        height: 45vh;
+        /* menos alto para no ocupar todo */
+        margin: 0 auto 1rem auto;
+    }
+
+    .izquierda-inferior {
+        height: 5vh;
+        /* puede mantenerse o usarse como separador */
+    }
+
+    .derecha-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .descripcion {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .qr-final {
+        width: 90px;
+        align-self: flex-end;
+    }
+
+    .galeria-patas-titulo {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .grupo-titulo {
+        font-size: 1.3rem;
+    }
+
+    .subprincipal {
+        font-size: 1rem;
+    }
+
+    .subsecundario {
+        font-size: 0.85rem;
+    }
+}

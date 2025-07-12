@@ -28,6 +28,14 @@ import RielesComponent19 from "@/components/Rieles/RielesComponent19";
 import RielesComponent20 from "@/components/Rieles/RielesComponent20.jsx";
 import RielesComponent21 from "@/components/Rieles/RielesComponent21";
 import RielesComponent22 from "@/components/Rieles/RielesComponent22.jsx";
+import GaleriaPatas from "@/components/Galerias/GaleriaPatas.jsx";
+import PatasComponent23 from "@/components/Patas/PatasComponent23.jsx";
+import PatasComponent24 from "@/components/Patas/PatasComponent24.jsx";
+import IndexSection2 from "@/components/Index/IndexSection2.jsx";
+import AlacenaComponent25 from "@/components/Alacenas/AlacenaComponent25";
+import AlacenaComponent26 from "@/components/Alacenas/AlacenaComponent26";
+import AlacenaComponent27 from "@/components/Alacenas/AlacenaComponent27.jsx";
+import GaleriaOrganizador from "@/components/Galerias/GaleriaOrganizador.jsx";
 export default function Home() {
   return (
     <>
@@ -62,6 +70,14 @@ export default function Home() {
         <RielesComponent20 />
         <RielesComponent21 />
         <RielesComponent22 />
+        <GaleriaPatas />
+        <PatasComponent23 />
+        <PatasComponent24 />
+        <IndexSection2 />
+        <AlacenaComponent25 />
+        <AlacenaComponent26 />
+        <AlacenaComponent27 />
+        <GaleriaOrganizador />
       </div>
     </>
   );

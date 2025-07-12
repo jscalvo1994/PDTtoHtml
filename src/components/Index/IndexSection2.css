@@ -1,0 +1,223 @@
+/* =======================
+   INDEX SECTION 2
+   ======================= */
+
+.index-section2 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.index-left2 {
+    width: 40%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.index-right2 {
+    width: 60%;
+    background: #f5f5f5;
+    padding: 3rem;
+    overflow-y: auto;
+    color: #111;
+    /* Asegura que todo texto sea negro por defecto */
+}
+
+.index-header2 {
+    margin-bottom: 2rem;
+}
+
+.index-title-block2 {
+    margin-bottom: 1rem;
+}
+
+.index-title2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+.index-subtitle2 {
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+.index-divider2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.index-line2 {
+    border: none;
+    border-top: 1px solid #000;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.index-highlight2 {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #000;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.index-content2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.index-column2 {
+    flex: 1;
+    color: #111;
+}
+
+.index-column2 h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #111;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.index-column2 ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
+
+.index-column2 li {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #111;
+}
+
+.index-column2 li:hover {
+    background-color: #111;
+    color: #fff;
+    padding-left: 0.5rem;
+    border-radius: 4px;
+}
+
+/* =======================
+   INFO BLOCK ESTILO TEXTO
+   ======================= */
+
+.info-block2 {
+    margin-top: 2rem;
+    padding-right: 1rem;
+    color: #111;
+}
+
+.info-text2 {
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+
+.info-link2 {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+
+.info-link2 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.info-link2 a:hover {
+    text-decoration: underline;
+}
+
+.info-footer2 {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #111;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+
+@media (max-width: 768px) {
+    .index-section2 {
+        flex-direction: column;
+    }
+
+    .index-left2 {
+        display: none !important;
+    }
+
+    .index-right2 {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .index-content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .index-column2 {
+        width: 100%;
+    }
+}
+
+/* Extra pequeño: teléfonos muy pequeños, por debajo de 480px */
+@media (max-width: 480px) {
+    .index-left2 {
+        display: none !important;
+    }
+
+    .index-right2 {
+        padding: 1.5rem 1rem;
+    }
+
+    .index-title2 {
+        font-size: 1.3rem;
+    }
+
+    .index-subtitle2 {
+        font-size: 0.85rem;
+    }
+
+    .index-content2 {
+        gap: 1.5rem;
+    }
+
+    .index-column2 h3 {
+        font-size: 0.95rem;
+    }
+
+    .index-column2 li {
+        font-size: 0.9rem;
+    }
+
+    .info-text2,
+    .info-footer2,
+    .info-link2 {
+        font-size: 0.9rem;
+    }
+}
