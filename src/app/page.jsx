@@ -16,7 +16,12 @@ import ManijasComponent9 from "@/components/Manijas/ManijasComponent9.jsx";
 import ManijasComponent10 from "@/components/Manijas/ManijasComponent10.jsx";
 import ManijasComponent11 from "@/components/Manijas/ManijasComponent11.jsx";
 import GaleriaImport from "@/components/Galerias/GaleriaImport.jsx";
-
+import BrazosComponents12 from "@/components/BrazosNeumaticos/BrazosComponents12.jsx";
+import BrazosComponents13 from "@/components/BrazosNeumaticos/BrazosComponents13.jsx";
+import BrazosComponents14 from "@/components/BrazosNeumaticos/BrazosComponents14.jsx";
+import BrazosComponent15 from "@/components/BrazosNeumaticos/BrazosComponents15.jsx";
+import BrazosComponent16 from "@/components/BrazosNeumaticos/BrazosComponents16.jsx";
+import BrazosComponent17 from "@/components/BrazosNeumaticos/BrazosComponents17.jsx";
 export default function Home() {
   return (
     <>
@@ -39,6 +44,12 @@ export default function Home() {
         <ManijasComponent10 />
         <ManijasComponent11 />
         <GaleriaImport />
+        <BrazosComponents12 />
+        <BrazosComponents13 />
+        <BrazosComponents14 />
+        <BrazosComponent15 />
+        <BrazosComponent16 />
+        <BrazosComponent17 />
       </div>
     </>
   );

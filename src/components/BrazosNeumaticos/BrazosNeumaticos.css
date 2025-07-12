@@ -1,0 +1,331 @@
+/* =======================
+   BRAZOS NEUMÁTICOS 12
+   ======================= */
+
+.brazos-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Lado izquierdo */
+.brazos-left {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.brazos-left-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 10%;
+    padding-right: 8%;
+}
+
+.brazos-left-text {
+    color: white;
+}
+
+.brazos-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.brazos-subtitle {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+}
+
+.brazos-page {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.qr-bg {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Lado derecho */
+.brazos-right {
+    width: 50%;
+    background: #f9f9f9;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+}
+
+.brazos-section-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.brazos-section-title .black-text {
+    color: black;
+}
+
+.brazos-section-title .gray-text {
+    color: #6c757d;
+}
+
+.brazos-divider {
+    height: 5px;
+    background-color: #ccc;
+    border: none;
+    margin: 1rem 0;
+}
+
+.brazos-description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.brazos-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .brazos-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .brazos-left,
+    .brazos-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .brazos-left {
+        min-height: 40vh;
+        padding: 1.5rem;
+    }
+
+    .brazos-left-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .brazos-left-text,
+    .brazos-left-qr {
+        margin: 0;
+    }
+
+    .brazos-section-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .brazos-description {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    .brazos-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .brazos-divider {
+        margin: 1rem auto;
+        width: 80%;
+    }
+}
+
+/** componentes */
+
+/* =======================
+   BRAZO NEUMÁTICO SECTION
+   ======================= */
+
+.bisagra-wrapper-BrazoNeumatico {
+    font-family: 'Poppins', sans-serif;
+    min-height: 50vh;
+    background: #f3f3f3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #111;
+}
+
+/* =======================
+   ENCABEZADO
+   ======================= */
+
+.product-header-BrazoNeumatico {
+    margin-bottom: 1.5rem;
+}
+
+.product-subtitle-BrazoNeumatico {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #333;
+}
+
+.product-title-BrazoNeumatico {
+    font-size: 1.6rem;
+    margin-top: 0.3rem;
+    color: #111;
+}
+
+.product-title-BrazoNeumatico em {
+    font-style: italic;
+    font-weight: 300;
+    color: #444;
+}
+
+.product-divider-BrazoNeumatico {
+    border: none;
+    border-top: 2px solid #111;
+    margin-top: 1rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* =======================
+   CONTENIDO CENTRAL
+   ======================= */
+
+.product-body-BrazoNeumatico {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.product-image-left-BrazoNeumatico {
+    flex: 1;
+}
+
+.product-main-image-BrazoNeumatico {
+    object-fit: contain;
+}
+
+/* =======================
+   DESCRIPCIÓN
+   ======================= */
+
+.product-description-BrazoNeumatico {
+    flex: 2;
+    color: #111;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.product-name-BrazoNeumatico {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.product-description-BrazoNeumatico ul {
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #111;
+}
+
+.product-description-BrazoNeumatico li {
+    margin-bottom: 0.4rem;
+}
+
+.product-description-BrazoNeumatico strong {
+    color: #000;
+    font-weight: 600;
+}
+
+/* =======================
+   TABLA Y PLANO TÉCNICO
+   ======================= */
+
+.product-data-table-BrazoNeumatico {
+    flex: 1.5;
+}
+
+.product-data-table-BrazoNeumatico table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.product-data-table-BrazoNeumatico th {
+    background: #000;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.product-data-table-BrazoNeumatico td {
+    border: 1px solid #ccc;
+    color: #000;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.6rem;
+}
+
+.product-sketch-BrazoNeumatico {
+    text-align: center;
+}
+
+.product-sketch-image-BrazoNeumatico {
+    margin-bottom: 0.5rem;
+}
+
+.product-id-BrazoNeumatico {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+
+@media screen and (max-width: 768px) {
+    .product-body-BrazoNeumatico {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .product-image-left-BrazoNeumatico,
+    .product-description-BrazoNeumatico,
+    .product-data-table-BrazoNeumatico {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .product-image-left-BrazoNeumatico,
+    .product-data-table-BrazoNeumatico {
+        text-align: left;
+    }
+
+    .product-main-image-BrazoNeumatico {
+        max-width: 60%;
+        height: auto !important;
+        margin: 0 auto;
+    }
+
+    .product-sketch-image-BrazoNeumatico {
+        max-width: 100%;
+        height: auto !important;
+        margin: 0 auto;
+    }
+}
