@@ -22,6 +22,12 @@ import BrazosComponents14 from "@/components/BrazosNeumaticos/BrazosComponents14
 import BrazosComponent15 from "@/components/BrazosNeumaticos/BrazosComponents15.jsx";
 import BrazosComponent16 from "@/components/BrazosNeumaticos/BrazosComponents16.jsx";
 import BrazosComponent17 from "@/components/BrazosNeumaticos/BrazosComponents17.jsx";
+import RielesGaleria from "@/components/Galerias/RielesGaleria.jsx";
+import RielesComponent18 from "@/components/Rieles/RielesComponent18";
+import RielesComponent19 from "@/components/Rieles/RielesComponent19";
+import RielesComponent20 from "@/components/Rieles/RielesComponent20.jsx";
+import RielesComponent21 from "@/components/Rieles/RielesComponent21";
+import RielesComponent22 from "@/components/Rieles/RielesComponent22.jsx";
 export default function Home() {
   return (
     <>
@@ -50,6 +56,12 @@ export default function Home() {
         <BrazosComponent15 />
         <BrazosComponent16 />
         <BrazosComponent17 />
+        <RielesGaleria />
+        <RielesComponent18 />
+        <RielesComponent19 />
+        <RielesComponent20 />
+        <RielesComponent21 />
+        <RielesComponent22 />
       </div>
     </>
   );

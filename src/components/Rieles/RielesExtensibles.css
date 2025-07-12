@@ -1,0 +1,735 @@
+/* =======================
+   RIELES COMPONENT 18
+   ======================= */
+
+.rieles18-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    /* fondo claro */
+    color: #000;
+    /* texto negro */
+}
+
+/* LADO IZQUIERDO */
+.rieles18-left {
+    width: 30%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.rieles18-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.rieles18-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.rieles18-title span {
+    font-weight: normal;
+}
+
+.rieles18-line {
+    border: none;
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.rieles18-product-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.rieles18-measures {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rieles18-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* TABLA */
+.rieles18-table {
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.rieles18-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.rieles18-table td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+
+/* LADO DERECHO */
+.rieles18-right {
+    width: 80%;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.rieles18-img {
+    object-fit: cover;
+}
+
+.rieles18-footer-text {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    color: #cfcfcf;
+    font-weight: 300;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+@media screen and (max-width: 768px) {
+    .rieles18-container {
+        flex-direction: column;
+        /* Muestra primero texto, luego imagen */
+    }
+
+    .rieles18-left,
+    .rieles18-right {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .rieles18-right {
+        min-height: 600px;
+        /* Tamaño fijo para imagen */
+    }
+
+    .rieles18-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .rieles18-footer-text {
+        display: none;
+    }
+
+    .rieles18-title {
+        font-size: 1.3rem;
+    }
+
+    .rieles18-product-title {
+        font-size: 1.2rem;
+    }
+
+    .rieles18-list {
+        font-size: 0.95rem;
+    }
+}
+
+/* =======================
+   RIELES COMPONENT 19
+   ======================= */
+
+.rieles19-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* LADO IZQUIERDO: Imagen */
+.rieles19-left {
+    width: 60%;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.rieles19-img {
+    object-fit: cover;
+}
+
+.rieles19-footer-text {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    color: #cfcfcf;
+    font-weight: 300;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* LADO DERECHO: Texto */
+.rieles19-right {
+    width: 40%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.rieles19-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.rieles19-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.rieles19-title span {
+    font-weight: normal;
+}
+
+.rieles19-line {
+    border: none;
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.rieles19-product-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.rieles19-measures {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rieles19-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* TABLA */
+.rieles19-table {
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.rieles19-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.rieles19-table td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+@media screen and (max-width: 768px) {
+    .rieles19-container {
+        flex-direction: column-reverse;
+        /* Mostrar primero el texto */
+    }
+
+    .rieles19-right,
+    .rieles19-left {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .rieles19-left {
+        min-height: 600px;
+        /* Tamaño fijo de imagen en móvil */
+    }
+
+    .rieles19-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .rieles19-footer-text {
+        display: none;
+    }
+
+    .rieles19-title {
+        font-size: 1.3rem;
+    }
+
+    .rieles19-product-title {
+        font-size: 1.2rem;
+    }
+
+    .rieles19-list {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* =======================
+   RIELES COMPONENT 20
+   ======================= */
+
+.rieles20-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ENCABEZADO */
+.rieles20-header {
+    padding: 2rem 3rem 1rem;
+    flex: 0 0 10%;
+}
+
+.rieles20-subtitle {
+    font-size: 0.9rem;
+}
+
+.rieles20-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rieles20-title span {
+    font-weight: normal;
+}
+
+.rieles20-line {
+    margin-top: 0.7rem;
+    border: none;
+    border-top: 2px solid #000;
+}
+
+/* CUERPO */
+.rieles20-content {
+    flex: 1;
+    display: flex;
+    padding: 2rem 3rem;
+    gap: 2rem;
+}
+
+/* COLUMNAS */
+.rieles20-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rieles20-image {
+    align-items: center;
+    justify-content: center;
+}
+
+.rieles20-info {
+    justify-content: center;
+}
+
+.rieles20-product-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.rieles20-measures {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rieles20-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* TABLA */
+.rieles20-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.rieles20-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.rieles20-table td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+
+/* PLANO */
+.rieles20-schematic {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+.rieles20-footer-text {
+    margin-top: auto;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #cfcfcf;
+    margin-top: 2rem;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+@media screen and (max-width: 768px) {
+    .rieles20-content {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .rieles20-header {
+        padding: 1.5rem 1.5rem 0.5rem;
+        text-align: left;
+    }
+
+    .rieles20-title {
+        font-size: 1.3rem;
+    }
+
+    .rieles20-product-title {
+        font-size: 1.2rem;
+    }
+
+    .rieles20-img,
+    .rieles20-schematic img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .rieles20-footer-text {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+/* =======================
+   RIELES COMPONENT 21
+   ======================= */
+
+.rieles21-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ENCABEZADO */
+.rieles21-header {
+    padding: 2rem 3rem 1rem;
+}
+
+.rieles21-subtitle {
+    font-size: 0.9rem;
+}
+
+.rieles21-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rieles21-title span {
+    font-weight: normal;
+}
+
+.rieles21-line {
+    margin-top: 0.7rem;
+    border: none;
+    border-top: 2px solid #000;
+}
+
+/* CONTENIDO */
+.rieles21-content {
+    display: flex;
+    padding: 2rem 3rem;
+    gap: 2rem;
+    flex: 1;
+}
+
+/* COLUMNA A */
+.column-a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rieles21-image-a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rieles21-info {
+    flex: 1;
+}
+
+.rieles21-product-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rieles21-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* COLUMNA B */
+.column-b {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rieles21-table-wrapper {
+    flex: 1;
+}
+
+.rieles21-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.rieles21-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.rieles21-table td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+
+.rieles21-schematic-small {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* COLUMNA C */
+.column-c {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rieles21-schematic-large {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rieles21-footer-text {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #cfcfcf;
+    text-align: center;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media screen and (max-width: 768px) {
+    .rieles21-content {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .rieles21-column {
+        width: 100%;
+    }
+
+    .rieles21-schematic-large img,
+    .rieles21-schematic-small img,
+    .rieles21-image-a img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .rieles21-footer-text {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .rieles21-title {
+        font-size: 1.3rem;
+    }
+
+    .rieles21-product-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* =======================
+   RIELES COMPONENT 22
+   ======================= */
+
+.rieles22-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* LADO IZQUIERDO */
+.rieles22-left {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rieles22-product-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rieles22-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* TABLA */
+.rieles22-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.rieles22-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.rieles22-table td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+
+/* LADO DERECHO */
+.rieles22-right {
+    width: 50%;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.rieles22-img {
+    object-fit: contain;
+}
+
+.rieles22-footer-text {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.85rem;
+    color: #cfcfcf;
+    pointer-events: none;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media screen and (max-width: 768px) {
+    .rieles22-container {
+        flex-direction: column;
+        /* Mostrar primero texto, luego imagen */
+    }
+
+    .rieles22-left,
+    .rieles22-right {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .rieles22-right {
+        height: 300px;
+        /* Tamaño fijo para imagen */
+    }
+
+    .rieles22-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+    }
+
+    .rieles22-footer-text {
+        position: static;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .rieles22-product-title {
+        font-size: 1.2rem;
+    }
+
+    .rieles22-list {
+        font-size: 0.95rem;
+    }
+}

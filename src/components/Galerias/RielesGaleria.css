@@ -1,0 +1,185 @@
+/* =======================
+   GALERÍA RIELES
+   ======================= */
+
+.galeria-container-rieles {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* LADO IZQUIERDO */
+.galeria-left-rieles {
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.rieles-title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rieles-title {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.rieles-title em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.rieles-subtitle-block {
+    text-align: right;
+}
+
+.rieles-subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.rieles-sub-desc {
+    font-size: 0.9rem;
+    color: gray;
+    margin: 0;
+}
+
+.rieles-image-wrapper {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.rieles-main-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* LADO DERECHO */
+.galeria-right-rieles {
+    width: 50%;
+    background-image: url('/galeria/rieles-bg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rieles-bg {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    /* ← CAMBIO CLAVE */
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    /* Ajusta según necesites */
+}
+
+/* BLOQUE DE INFO Y QR */
+.rieles-info-block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TEXTOS */
+.rieles-text-group {
+    text-align: left;
+    margin-left: 20%;
+}
+
+.rieles-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.rieles-desc,
+.rieles-pages {
+    font-size: 1rem;
+    color: white;
+    margin: 0.2rem 0;
+}
+
+/* QR */
+.rieles-qr-wrapper {
+    margin-right: 8%;
+}
+
+.rieles-qr-bg {
+    background-color: white;
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+/* =======================
+   RESPONSIVE MOBILE
+   ======================= */
+@media screen and (max-width: 768px) {
+    .galeria-container-rieles {
+        flex-direction: column;
+    }
+
+    .galeria-left-rieles,
+    .galeria-right-rieles {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .rieles-title-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .rieles-image-wrapper {
+        padding-top: 1rem;
+    }
+
+    .rieles-main-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .rieles-bg {
+        background-position: center;
+        padding: 2rem;
+    }
+
+    .rieles-info-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .rieles-text-group {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .rieles-qr-wrapper {
+        margin-right: 0;
+    }
+
+    .rieles-qr-bg {
+        align-self: flex-start;
+    }
+}
