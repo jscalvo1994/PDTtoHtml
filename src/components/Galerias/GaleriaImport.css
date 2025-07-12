@@ -1,0 +1,122 @@
+/* =======================
+   GALERÍA IMPORTADORES
+   ======================= */
+
+.galeria-import {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Franja negra superior */
+.galeria-import-top {
+    height: 8%;
+    background-color: black;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Imagen que ocupa el resto */
+.galeria-import-img-wrapper {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 84%;
+}
+
+.galeria-import-img {
+    object-fit: cover;
+}
+
+/* Footer con fondo negro dividido 50 / 50 */
+.galeria-import-footer {
+    height: 18%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Parte izquierda: texto + QR alineados hacia la derecha */
+.footer-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* <-- Se alinean hacia la derecha */
+    align-items: center;
+    gap: 7rem;
+    /* Espacio entre texto y QR */
+    margin-right: 3rem;
+    /* ⬅️ Ajusta el valor según lo que consideres “prudente” */
+}
+
+.footer-left-qr {
+    display: flex;
+    align-items: end;
+    background-color: white;
+    /* ⬅️ fondo blanco */
+    padding: 0.5rem;
+    /* ⬅️ espacio interno alrededor del QR */
+    border-radius: 0.5rem;
+    /* ⬅️ bordes redondeados opcionalmente */
+}
+
+/* Texto de la izquierda alineado a la derecha */
+.footer-left-text {
+    text-align: left;
+}
+
+.import-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.import-subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+    justify-content: end;
+}
+
+/* Parte derecha: texto alineado hacia la izquierda */
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    /* <-- Se alinean hacia la izquierda */
+    align-items: center;
+}
+
+.import-download {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .galeria-import-footer {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: none;
+        justify-content: center;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+}
