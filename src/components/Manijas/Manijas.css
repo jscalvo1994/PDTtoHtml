@@ -1,0 +1,505 @@
+/* =======================
+   MANIJAS COMPONENT 9
+   ======================= */
+
+.manijas-section {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    /* ✅ en vez de height: 100vh */
+    overflow: hidden;
+}
+
+/* -----------------------
+   Columna Izquierda
+------------------------ */
+.manijas-left {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+.section-title {
+    font-size: 0.9rem;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.section-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.section-heading span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    display: inline-block;
+    margin-left: 0.4rem;
+}
+
+.divider {
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* -----------------------
+   Imagen del producto
+------------------------ */
+.manija-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manija-image {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: 1.2rem;
+}
+
+/* -----------------------
+   Tabla de Referencias
+------------------------ */
+.manijas-table {
+    width: 100%;
+    height: max-content;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.manijas-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.manijas-table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+/* -----------------------
+   Descripción técnica
+------------------------ */
+.manijas-description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.manijas-description p {
+    margin: 0.4rem 0;
+}
+
+/* -----------------------
+   Columna Derecha
+------------------------ */
+.manijas-right {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ambiente-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------------------
+   Subtítulo inferior
+------------------------ */
+.manijas-label {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 80%;
+    font-size: 0.75rem;
+    color: #ccc;
+    font-weight: 300;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 992px) {
+    .manijas-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .manijas-left,
+    .manijas-right {
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+        /* ✅ Permite que crezca con el contenido */
+    }
+
+
+    .ambiente-image {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .manijas-label {
+        right: 1.2rem;
+        bottom: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* =======================
+   MANIJAS COMPONENT 10 (INVERTED)
+   ======================= */
+
+.manijas-section-inverted {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    /* ✅ en vez de height: 100vh */
+    overflow: hidden;
+}
+
+/* -----------------------
+   Columna Izquierda (Imagen ambiente)
+------------------------ */
+.manijas-left-inverted {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ambiente-image-inverted {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.manijas-label-inverted {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    font-size: 0.75rem;
+    color: #ccc;
+    font-weight: 300;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* -----------------------
+   Columna Derecha (Texto)
+------------------------ */
+.manijas-right-inverted {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+.section-title-inverted {
+    font-size: 0.9rem;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.section-heading-inverted {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.section-heading-inverted span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.divider-inverted {
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* -----------------------
+   Imagen del producto pequeño
+------------------------ */
+.manija-image-wrapper-inverted {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manija-image-inverted {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: 1.2rem;
+}
+
+/* -----------------------
+   Tabla de Referencias
+------------------------ */
+.manijas-table-inverted {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.manijas-table-inverted th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.manijas-table-inverted td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+/* -----------------------
+   Descripción técnica
+------------------------ */
+.manijas-description-inverted {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.manijas-description-inverted p {
+    margin: 0.4rem 0;
+}
+
+/* =======================
+   RESPONSIVE (INVERTED)
+======================= */
+@media (max-width: 992px) {
+    .manijas-section-inverted {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .manijas-left-inverted,
+    .manijas-right-inverted {
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .manijas-left-inverted {
+        min-height: 600px;
+    }
+
+    .ambiente-image-inverted {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .manijas-label-inverted {
+        right: 1.2rem;
+        bottom: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* =======================
+   MANIJAS COMPONENT 11 (TRIPLE)
+   ======================= */
+
+.manijas-section-triple {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 4rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* -----------------------
+   Encabezado
+------------------------ */
+.manijas-header-triple {
+    width: 100%;
+    text-align: left;
+}
+
+.manijas-header-triple h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.manijas-header-triple h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.manijas-header-triple h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.manijas-header-triple hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* -----------------------
+   Contenedor de tarjetas
+------------------------ */
+.manijas-grid-triple {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* -----------------------
+   Tarjeta individual
+------------------------ */
+.manija-card-triple {
+    background-color: #fff;
+    padding: 1rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.manija-card-triple img {
+    width: auto;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* -----------------------
+   Tabla
+------------------------ */
+.manijas-table-triple {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.manijas-table-triple th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+}
+
+.manijas-table-triple td {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+    color: #000;
+}
+
+/* -----------------------
+   Título y descripción
+------------------------ */
+.manija-title-triple {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: #000;
+    /* ✅ Forzar negro */
+}
+
+.manija-description-triple {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.manija-description-triple p {
+    margin: 0.3rem 0;
+    color: #000;
+}
+
+/* -----------------------
+   Subtítulo final
+------------------------ */
+.manijas-label-triple {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: right;
+    width: 100%;
+}
+
+/* =======================
+   RESPONSIVE (TRIPLE)
+======================= */
+@media (max-width: 992px) {
+    .manijas-grid-triple {
+        flex-direction: column;
+    }
+
+    .manija-card-triple {
+        align-items: flex-start;
+    }
+
+    .manijas-label-triple {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .manijas-right,
+    /* En Component9 */
+    .manijas-left-inverted
+
+    /* En Component10 */
+        {
+        display: none;
+    }
+}

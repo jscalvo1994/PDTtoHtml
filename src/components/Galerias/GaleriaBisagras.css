@@ -1,0 +1,161 @@
+/* =======================
+   GALERÍA BISAGRAS
+   ======================= */
+
+.galeria-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* LADO IZQUIERDO */
+.galeria-left {
+    width: 50%;
+    background: url('/galeria/bisagra-bg.png') center center / cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 2rem;
+    color: white;
+}
+
+.galeria-novedades-bloque {
+    display: flex;
+    flex-direction: row;
+    /* ← Aquí el cambio */
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 2rem;
+}
+
+.galeria-novedades-texto {
+    line-height: 1.4;
+}
+
+.galeria-novedades-texto .novedad-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.galeria-novedades-texto .novedad-sub {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.galeria-novedades-texto .novedad-page {
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* LADO DERECHO */
+.galeria-right {
+    width: 50%;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.galeria-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.galeria-header h3 span {
+    font-weight: normal;
+}
+
+.galeria-header p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.galeria-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.galeria-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* =======================
+   RESPONSIVE GALERÍA
+   ======================= */
+
+@media (max-width: 1024px) {
+    .galeria-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .galeria-left,
+    .galeria-right {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .galeria-left {
+        min-height: 400px;
+        /* AUMENTA altura para no cortar la bisagra */
+        justify-content: flex-end;
+    }
+
+    .galeria-novedades-bloque {
+        flex-direction: row;
+        /* Mantener texto y QR lado a lado */
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .galeria-novedades-texto {
+        flex: 1;
+    }
+
+    .galeria-novedades-bloque img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .galeria-right {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-novedades-bloque {
+        flex-direction: row;
+        /* ← Mantener horizontal incluso en móviles */
+        gap: 1rem;
+    }
+
+    .galeria-novedades-texto .novedad-title {
+        font-size: 0.95rem;
+    }
+
+    .galeria-novedades-texto .novedad-sub,
+    .galeria-novedades-texto .novedad-page {
+        font-size: 0.8rem;
+    }
+
+    .galeria-novedades-bloque img {
+        width: 70px;
+        height: 70px;
+    }
+}

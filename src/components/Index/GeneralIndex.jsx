@@ -1,8 +1,16 @@
 'use client';
+
 import './generalindex.css';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'], // puedes ajustar según lo que uses
+});
+
 export default function GeneralIndex() {
   return (
-    <section className="general-index">
+    <section className={`${poppins.className} general-index`}>
       {/* Header superior */}
       <hr className="general-index-divider" />
       <div className="general-index-header">

@@ -1,0 +1,179 @@
+/* =======================
+   BISAGRAS SECTION
+   ======================= */
+
+.bisagra-wrapper {
+    font-family: 'Poppins', sans-serif;
+    min-height: 50vh;
+    background: #f3f3f3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #111;
+    /* color base para todo el contenido */
+}
+
+/* =======================
+   ENCABEZADO
+   ======================= */
+
+.product-header {
+    margin-bottom: 1.5rem;
+}
+
+.product-subtitle {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #333;
+}
+
+.product-title {
+    font-size: 1.6rem;
+    margin-top: 0.3rem;
+    color: #111;
+}
+
+.product-title em {
+    font-style: italic;
+    font-weight: 300;
+    color: #444;
+}
+
+.product-divider {
+    border: none;
+    border-top: 2px solid #111;
+    margin-top: 1rem;
+    width: 100px;
+}
+
+/* =======================
+   CONTENIDO CENTRAL
+   ======================= */
+
+.product-body {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.product-image-left {
+    flex: 1;
+}
+
+.product-main-image {
+    object-fit: contain;
+}
+
+/* =======================
+   DESCRIPCIÓN
+   ======================= */
+
+.product-description {
+    flex: 2;
+    color: #111;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.product-name {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.product-description ul {
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #111;
+}
+
+.product-description li {
+    margin-bottom: 0.4rem;
+}
+
+.product-description strong {
+    color: #000;
+    font-weight: 600;
+}
+
+/* =======================
+   TABLA Y PLANO TÉCNICO
+   ======================= */
+
+.product-data-table {
+    flex: 1.5;
+}
+
+.product-data-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.product-data-table th {
+    background: #000;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.product-data-table td {
+    border: 1px solid #ccc;
+    color: #000;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.6rem;
+}
+
+.product-sketch {
+    text-align: center;
+}
+
+.product-sketch-image {
+    margin-bottom: 0.5rem;
+}
+
+.product-id {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+
+@media screen and (max-width: 768px) {
+    .product-body {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .product-image-left,
+    .product-description,
+    .product-data-table {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .product-image-left,
+    .product-data-table {
+        text-align: left;
+    }
+
+    .product-main-image {
+        max-width: 60%;
+        height: auto !important;
+        margin: 0 auto;
+    }
+
+    .product-sketch-image {
+        max-width: 100%;
+        height: auto !important;
+        margin: 0 auto;
+    }
+}

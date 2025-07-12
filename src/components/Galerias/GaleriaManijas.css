@@ -1,0 +1,161 @@
+/* =======================
+   GALERÍA MANIJAS
+   ======================= */
+
+.galeria-manijas-section {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* LADO IZQUIERDO */
+.galeria-manijas-left {
+    width: 50%;
+    background: url('/galeria/manija-bg.png') center center / cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+    color: white;
+}
+
+.galeria-manijas-novedades {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.galeria-manijas-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.galeria-manijas-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.galeria-manijas-sub {
+    font-size: 1rem;
+    color: #ddd;
+    margin: 0;
+}
+
+.galeria-manijas-page {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 0;
+}
+
+/* LADO DERECHO */
+.galeria-manijas-right {
+    width: 50%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+}
+
+.galeria-manijas-img-wrapper {
+    width: 88%;
+    aspect-ratio: 16 / 9;
+    margin: 10% 6%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.galeria-manijas-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Texto inferior derecho */
+.galeria-manijas-label {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    z-index: 2;
+    color: white;
+    text-align: left;
+}
+
+.galeria-manijas-label h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.galeria-manijas-label h3 span {
+    font-weight: normal;
+}
+
+.galeria-manijas-label p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* =======================
+   MEDIA QUERIES
+   ======================= */
+
+@media (max-width: 1024px) {
+
+    .galeria-manijas-left,
+    .galeria-manijas-right {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .galeria-manijas-img-wrapper {
+        width: 94%;
+        margin: 5% 3%;
+    }
+
+    .galeria-manijas-label {
+        bottom: 1rem;
+        left: 1.5rem;
+    }
+
+    .galeria-manijas-label h3 {
+        font-size: 1rem;
+    }
+
+    .galeria-manijas-label p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-manijas-img-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .galeria-manijas-img {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+    }
+
+    .galeria-manijas-label {
+        position: relative;
+        bottom: unset;
+        left: unset;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
