@@ -1,0 +1,492 @@
+/* =======================
+   CONDIMENTERO COMPONENT 28 (TRIPLE)
+   ======================= */
+
+.condimentero-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 4rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* -----------------------
+   Encabezado
+------------------------ */
+.condimentero-header {
+    width: 100%;
+    text-align: left;
+}
+
+.condimentero-header h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.condimentero-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.condimentero-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.condimentero-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* -----------------------
+   Contenedor de tarjetas
+------------------------ */
+.condimentero-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* -----------------------
+   Tarjeta individual
+------------------------ */
+.condimentero-card {
+    background-color: #fff;
+    padding: 1rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.condimentero-card img {
+    width: auto;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-left: 220px;
+}
+
+/* -----------------------
+   Tabla
+------------------------ */
+.condimentero-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.condimentero-table th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+}
+
+.condimentero-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+    color: #000;
+}
+
+/* -----------------------
+   Título y descripción
+------------------------ */
+.condimentero-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: #000;
+}
+
+.condimentero-description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 2.5;
+}
+
+.condimentero-description p {
+    margin: 0.3rem 0;
+    color: #000;
+}
+
+/* -----------------------
+   Subtítulo final
+------------------------ */
+.condimentero-label {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: right;
+    width: 100%;
+}
+
+/* =======================
+   RESPONSIVE (TRIPLE)
+======================= */
+@media (max-width: 992px) {
+    .condimentero-grid {
+        flex-direction: column;
+    }
+
+    .condimentero-card {
+        align-items: flex-start;
+    }
+
+    .condimentero-label {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
+
+
+/* =======================
+   CONDIMENTERO COMPONENT 30
+   ======================= */
+
+.condimentero30-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 4rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* -----------------------
+   Encabezado
+------------------------ */
+.condimentero30-header {
+    width: 100%;
+    text-align: left;
+}
+
+.condimentero30-header h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.condimentero30-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.condimentero30-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.condimentero30-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* -----------------------
+   Contenido principal
+------------------------ */
+.condimentero30-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.condimentero30-left,
+.condimentero30-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.condimentero30-middle {
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.condimentero30-middle h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.condimentero30-middle ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.condimentero30-middle ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+/* -----------------------
+   Tabla
+------------------------ */
+.condimentero30-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.condimentero30-table th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+}
+
+.condimentero30-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+    color: #000;
+}
+
+/* -----------------------
+   Subtítulo final
+------------------------ */
+.condimentero30-label {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: right;
+    width: 100%;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 992px) {
+    .condimentero30-content {
+        flex-direction: column;
+    }
+
+    .condimentero30-label {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
+
+/* =======================
+   CONDIMENTERO COMPONENT 31 (RESET)
+   ======================= */
+
+.condimentero31-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 4rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+/* -----------------------
+   Título alineado a la izquierda
+------------------------ */
+.condimentero31-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.condimentero31-title {
+    text-align: left;
+    width: 100%;
+}
+
+.condimentero31-title h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.condimentero31-title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.condimentero31-title h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.condimentero31-title hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* -----------------------
+   Sección izquierda/derecha
+------------------------ */
+.condimentero31-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.condimentero31-left,
+.condimentero31-right {
+    width: 50%;
+}
+
+.condimentero31-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.condimentero31-left {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 75vh;
+    /* 👈 Altura explícita para dividir en 50/50 */
+}
+
+/* Sub-sección superior: imagen */
+.condimentero31-left-top {
+    flex: 1;
+    height: 50%;
+    position: relative;
+    /* 🔹 necesario para Image fill */
+    overflow: hidden;
+    /* 🔹 oculta cualquier desborde */
+
+}
+
+.condimentero31-img {
+    object-fit: contain;
+    /* 🔹 mantiene la imagen contenida */
+}
+
+/* Sub-sección inferior: fondo azul */
+.condimentero31-left-bottom {
+    flex: 1;
+    height: 50vh;
+}
+
+/* Reutilizamos tabla y texto */
+.condimentero31-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.condimentero31-table th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+}
+
+.condimentero31-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+    color: #000;
+}
+
+.condimentero31-left-bottom h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #000;
+}
+
+.condimentero31-left-bottom ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    color: #000;
+}
+
+.condimentero31-left-bottom ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+/* Ajustar altura de la sección derecha */
+.condimentero31-right {
+    width: 50%;
+    height: 600px;
+    /* igual a la izquierda */
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* -----------------------
+   Subtítulo final
+------------------------ */
+.condimentero31-label {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: right;
+    width: 100%;
+}
+
+/* -----------------------
+   Responsive
+------------------------ */
+@media (max-width: 992px) {
+    .condimentero31-content {
+        flex-direction: column;
+    }
+
+    .condimentero31-left,
+    .condimentero31-right {
+        width: 100%;
+    }
+
+    .condimentero31-label {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
+
+.condimentero31-content.invertido {
+    flex-direction: row-reverse;
+}

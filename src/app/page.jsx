@@ -36,6 +36,15 @@ import AlacenaComponent25 from "@/components/Alacenas/AlacenaComponent25";
 import AlacenaComponent26 from "@/components/Alacenas/AlacenaComponent26";
 import AlacenaComponent27 from "@/components/Alacenas/AlacenaComponent27.jsx";
 import GaleriaOrganizador from "@/components/Galerias/GaleriaOrganizador.jsx";
+import OrganizadorComponent28 from "@/components/Organizadores/OrganizadorComponent28";
+import OrganizadorComponent29 from "@/components/Organizadores/OrganizadorComponent29.jsx";
+import OrganizadorComponent30 from "@/components/Organizadores/OrganizadorComponent30";
+import OrganizadorComponent31 from "@/components/Organizadores/OrganizadorComponent31.jsx";
+import OrganizadorComponent32 from "@/components/Organizadores/OrganizadorComponent32";
+import OrganizadorComponent33 from "@/components/Organizadores/OrganizadorComponent33.jsx";
+import OrganizadorComponent34 from "@/components/Organizadores/OrganizadorComponent34";
+import GaleriaImport2 from "@/components/Galerias/GaleriaImport2.jsx";
+import IndexSection3 from "@/components/Index/IndexSection3";
 export default function Home() {
   return (
     <>
@@ -78,6 +87,15 @@ export default function Home() {
         <AlacenaComponent26 />
         <AlacenaComponent27 />
         <GaleriaOrganizador />
+        <OrganizadorComponent28 />
+        <OrganizadorComponent29 />
+        <OrganizadorComponent30 />
+        <OrganizadorComponent31 />
+        <OrganizadorComponent32 />
+        <OrganizadorComponent33 />
+        <OrganizadorComponent34 />
+        <GaleriaImport2 />
+        <IndexSection3 />
       </div>
     </>
   );

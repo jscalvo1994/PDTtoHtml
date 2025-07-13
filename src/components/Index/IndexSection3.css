@@ -1,0 +1,104 @@
+/* =======================
+   INDEX SECTION 3
+   ======================= */
+
+.index-section3 {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.index-left3 {
+    position: relative;
+    width: 75%;
+    height: 100vh;
+}
+
+.index-right3 {
+    width: 25%;
+    background-color: #fff;
+    padding: 2rem;
+    overflow-y: auto;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+.index-title3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.index-subtitle3 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.index-menu3 h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.index-menu3 ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.index-menu3 li {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.index-menu3 li:hover {
+    background-color: #111;
+    color: #fff;
+    padding-left: 0.5rem;
+    border-radius: 4px;
+}
+
+.index-link3 {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.index-link3 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.index-link3 a:hover {
+    text-decoration: underline;
+}
+
+.index-footer3 {
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+
+@media (max-width: 768px) {
+    .index-section3 {
+        flex-direction: column;
+    }
+
+    .index-left3 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .index-right3 {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
