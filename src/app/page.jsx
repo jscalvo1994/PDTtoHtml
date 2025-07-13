@@ -45,6 +45,9 @@ import OrganizadorComponent33 from "@/components/Organizadores/OrganizadorCompon
 import OrganizadorComponent34 from "@/components/Organizadores/OrganizadorComponent34";
 import GaleriaImport2 from "@/components/Galerias/GaleriaImport2.jsx";
 import IndexSection3 from "@/components/Index/IndexSection3";
+import AccesoriosComponent35 from "@/components/Accesorios/AccesoriosComponent35.jsx";
+import AccesoriosComponent36 from "@/components/Accesorios/AccesoriosComponent36";
+import AccesorioComponent37 from "@/components/Accesorios/AccesorioComponent37.jsx";
 export default function Home() {
   return (
     <>
@@ -96,6 +99,9 @@ export default function Home() {
         <OrganizadorComponent34 />
         <GaleriaImport2 />
         <IndexSection3 />
+        <AccesoriosComponent35 />
+        <AccesoriosComponent36 />
+        <AccesorioComponent37 />
       </div>
     </>
   );

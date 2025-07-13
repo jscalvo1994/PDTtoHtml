@@ -1,0 +1,452 @@
+/* =======================
+   ACCESORIOS COMPONENT 31
+   ======================= */
+
+.accesorios31-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.accesorios31-header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.accesorios31-header p {
+    color: #000;
+    font-size: 0.95rem;
+}
+
+.accesorios31-body {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.accesorios31-left {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accesorios31-img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.accesorios31-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.accesorios31-top {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.accesorios31-top-a {
+    flex: 1;
+    color: #000;
+}
+
+.accesorios31-top-b {
+    flex: 2;
+    color: #000;
+}
+
+.accesorios31-top-b h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.accesorios31-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.accesorios31-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.accesorios31-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.accesorios31-lista {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+}
+
+.accesorios31-lista li {
+    margin-bottom: 0.5rem;
+}
+
+.accesorios31-bottom hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid #aaa;
+}
+
+.accesorios31-description {
+    font-size: 1.10rem;
+    color: #444;
+}
+
+.accesorios31-footer {
+    font-size: 0.8rem;
+    color: #000;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+
+@media screen and (max-width: 768px) {
+    .accesorios31-body {
+        flex-direction: column;
+    }
+
+    .accesorios31-left {
+        display: none;
+        /* 👈 Esto oculta la imagen */
+    }
+
+    .accesorios31-right {
+        max-width: 100%;
+    }
+
+    .accesorios31-img {
+        max-height: 400px;
+    }
+
+    .accesorios31-top {
+        flex-direction: column;
+    }
+}
+
+
+/* =======================
+   ACCESORIOS COMPONENT 36 (TRIPLE)
+   ======================= */
+
+.accesorios36-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 4rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* -----------------------
+   Encabezado
+------------------------ */
+.accesorios36-header {
+    width: 100%;
+    text-align: left;
+}
+
+.accesorios36-header h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.accesorios36-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+.accesorios36-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.accesorios36-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* -----------------------
+   Contenedor de tarjetas
+------------------------ */
+.accesorios36-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* -----------------------
+   Tarjeta individual
+------------------------ */
+.accesorios36-card {
+    background-color: #fff;
+    padding: 1rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.accesorios36-card img {
+    width: auto;
+    max-width: 220px;
+    height: 110px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -----------------------
+   Tabla
+------------------------ */
+.accesorios36-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.accesorios36-table th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+}
+
+.accesorios36-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+    color: #000;
+}
+
+/* -----------------------
+   Título y descripción
+------------------------ */
+.accesorios36-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: #000;
+}
+
+.accesorios36-description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 2;
+}
+
+.accesorios36-description p {
+    margin: 0.3rem 0;
+    color: #000;
+}
+
+/* -----------------------
+   Subtítulo final
+------------------------ */
+.accesorios36-label {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: right;
+    width: 100%;
+}
+
+/* =======================
+   RESPONSIVE (TRIPLE)
+======================= */
+@media (max-width: 992px) {
+    .accesorios36-grid {
+        flex-direction: column;
+    }
+
+    .accesorios36-card {
+        align-items: flex-start;
+    }
+
+    .accesorios36-label {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
+
+
+/* =======================
+   ACCESORIO COMPONENT 37
+   ======================= */
+
+.accesorio37-section {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.accesorio37-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.accesorio37-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.accesorio37-header p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.accesorio37-header hr {
+    margin-top: 1rem;
+    border-top: 2px solid #000;
+}
+
+/* Contenido principal */
+.accesorio37-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Columna izquierda */
+.accesorio37-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accesorio37-images {
+    display: flex;
+    gap: 1rem;
+}
+
+.accesorio37-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.accesorio37-text ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+}
+
+.accesorio37-text li {
+    margin-bottom: 0.5rem;
+}
+
+/* Columna derecha */
+.accesorio37-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.accesorio37-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.accesorio37-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+.accesorio37-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem 1rem;
+}
+
+/* Plano técnico */
+.accesorio37-plano img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Pie de página */
+.accesorio37-footer {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: right;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+
+@media screen and (max-width: 768px) {
+    .accesorio37-body {
+        flex-direction: column;
+    }
+
+    .accesorio37-left,
+    .accesorio37-right {
+        max-width: 100%;
+    }
+
+    .accesorio37-images {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .accesorio37-footer {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}

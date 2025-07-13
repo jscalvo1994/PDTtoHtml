@@ -362,6 +362,9 @@
 .condimentero31-left,
 .condimentero31-right {
     width: 50%;
+    max-width: 950px;
+    justify-content: center;
+    
 }
 
 .condimentero31-img {

@@ -62,8 +62,8 @@ export default function OrganizadorComponent34() {
                         src="/organizador/condimentero9.png"
                         alt="Cajón real"
                         layout="responsive"
-                        width={800}
-                        height={600}
+                        width={600}
+                        height={400}
                         className="condimentero31-img"
                     />
                 </div>
