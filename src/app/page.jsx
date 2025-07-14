@@ -67,6 +67,10 @@ import GaleriaImport3 from "@/components/Galerias/GaleriaImport3";
 import ClavillosIndex from "@/components/Index/ClavillosIndex";
 import ClavijosComponent50 from "@/components/Clavijos/ClavijosComponent50";
 import CantosComponent51 from "@/components/Cantos/CantosComponent51";
+import GaleriaMDF from "@/components/Galerias/GaleriaMDF";
+import MdfComponent52 from "@/components/mdf/MdfComponent52";
+import MdfComponent53 from "@/components/mdf/MdfComponent53";
+import FooterBanner from "@/components/Index/FooterBanner.jsx";
 export default function Home() {
   return (
     <>
@@ -140,6 +144,10 @@ export default function Home() {
         <ClavillosIndex />
         <ClavijosComponent50 />
         <CantosComponent51 />
+        <GaleriaMDF />
+        <MdfComponent52 />
+        <MdfComponent53 />
+        <FooterBanner />
       </div>
     </>
   );

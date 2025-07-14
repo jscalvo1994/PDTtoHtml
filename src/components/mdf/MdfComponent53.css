@@ -1,0 +1,79 @@
+
+/* =======================
+   MDF COMPONENT 53 STYLES
+   ======================= */
+
+.mdf53-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.mdf53-left {
+  flex: 0 0 180px;
+}
+
+.mdf53-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mdf53-header h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.mdf53-header span {
+  color: gray;
+}
+
+.mdf53-sub, .mdf53-subsub {
+  color: #999;
+  margin: 0;
+}
+
+.mdf53-right h4 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.mdf53-right ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.mdf53-qr {
+  margin: 20px 0;
+}
+
+.mdf53-footnote {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.mdf53-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mdf53-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mdf53-right ul {
+    text-align: left;
+  }
+}

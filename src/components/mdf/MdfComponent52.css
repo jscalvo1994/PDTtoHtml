@@ -1,0 +1,132 @@
+/* =======================
+   MDF COMPONENT 52 STYLES
+   ======================= */
+hr {
+
+  border: 1px solid #000;
+  margin: 20px 0;
+}
+
+.mdf52-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.mdf52-left {
+  flex: 1 1 50%;
+  background-image: url('/mdf/MDF81.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.mdf52-image-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+}
+
+.mdf52-image-overlay h2 {
+  font-size: 3rem;
+  color: black;
+  margin: 0;
+}
+
+.mdf52-image-overlay p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.mdf52-image-overlay span {
+  font-size: 1rem;
+}
+
+.mdf52-right {
+  flex: 1 1 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.mdf52-header h3 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+
+.mdf52-sub,
+.mdf52-subsub {
+  color: #000;
+  margin: 0;
+}
+
+.mdf52-thumbs-row {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.mdf52-info {
+  margin-top: 30px;
+  color: #000;
+}
+
+.mdf52-info h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.mdf52-info ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.mdf52-description {
+  margin-top: 30px;
+}
+
+.mdf52-description p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.mdf52-footnote {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-align: right;
+  color: #aaa;
+}
+
+.mdf52-single-table {
+  margin-top: 30px;
+  width: 50%;
+  margin-left: 15%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mdf52-container {
+    flex-direction: column;
+  }
+
+  .mdf52-left,
+  .mdf52-right {
+    flex: 1 1 100%;
+    min-height: auto;
+  }
+
+  .mdf52-thumbs-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
