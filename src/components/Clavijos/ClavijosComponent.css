@@ -1,0 +1,26 @@
+/* Nueva fila para tabla + imagen */
+.table-image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.table-image-wrapper .tapacantos-table {
+    flex: 1 1 60%;
+    min-width: 280px;
+}
+
+.table-image-wrapper .side-image-wrapper {
+    flex: 1 1 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-image-wrapper .side-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}

@@ -1,0 +1,182 @@
+/* =======================
+   TAPACANTOS SECTION
+   ======================= */
+
+.tapacantos-section {
+    background-color: #f9f9f9;
+    color: #000;
+    height: 100vh;
+    /* Máxima altura */
+    overflow: hidden;
+}
+
+.container-tapacantos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.left-column-tapacantos,
+.right-column-tapacantos {
+    flex: 1 1 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.left-column-tapacantos {
+    justify-content: center;
+}
+
+.main-image-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image-tapacantos {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.right-column-tapacantos {
+    overflow-y: auto;
+}
+
+.title-tapacantos {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.title-tapacantos span {
+    font-weight: normal;
+    color: #888;
+}
+
+.subtitle-tapacantos {
+    margin-bottom: 16px;
+    color: #888;
+    font-size: 14px;
+}
+
+.heading-tapacantos {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.table-image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.tapacantos-table {
+    flex: 1 1 60%;
+    min-width: 260px;
+    border-collapse: collapse;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.tapacantos-table th,
+.tapacantos-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.tapacantos-table th {
+    background-color: #eee;
+}
+
+.side-image-wrapper {
+    flex: 1 1 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-image-wrapper img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+.details-tapacantos {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.details-tapacantos li {
+    margin-bottom: 4px;
+}
+
+.separator-tapacantos {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 12px 0;
+}
+
+.description-tapacantos {
+    color: #555;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.page-number-tapacantos {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+    margin-top: auto;
+}
+
+/* Escalado adicional en desktop si aún hay mucho contenido */
+@media (min-width: 992px) {
+    .right-column-tapacantos {
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+    .container-tapacantos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-column-tapacantos,
+    .right-column-tapacantos {
+        flex: 1 1 100%;
+        height: auto;
+        overflow: visible;
+        padding: 10px;
+    }
+
+    .table-image-wrapper {
+        flex-direction: column;
+    }
+
+    .tapacantos-table,
+    .side-image-wrapper {
+        width: 100%;
+    }
+
+    .side-image-wrapper img {
+        width: 100%;
+        max-width: 240px;
+    }
+}

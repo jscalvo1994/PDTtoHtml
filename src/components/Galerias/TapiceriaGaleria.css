@@ -5,7 +5,8 @@
 .tapiceria-galeria-container {
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    flex-wrap: nowrap;
 }
 
 /* LADO IZQUIERDO */
@@ -88,4 +89,21 @@
 /* Margen inferior de cierre visual */
 .tapiceria-bottom-margin {
     flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .tapiceria-galeria-left {
+        display: none;
+    }
+
+    .tapiceria-galeria-right {
+        width: 100%;
+    }
+
+    .tapiceria-galeria-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
 }

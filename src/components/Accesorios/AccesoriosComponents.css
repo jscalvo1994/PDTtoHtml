@@ -496,6 +496,7 @@
     box-sizing: border-box;
     margin-bottom: 4rem;
     /* separación entre componentes */
+    height: 80vh;
 }
 
 /* -----------------------
@@ -687,6 +688,7 @@
 
 .accesorios-reverse {
     flex-direction: row-reverse;
+    margin-right: -5rem;
 }
 
 @media (max-width: 992px) {

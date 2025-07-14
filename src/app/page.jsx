@@ -62,6 +62,11 @@ import TapiceriaIndex from "@/components/Index/TapiceriaIndex";
 import TapiceriaComponent47 from "@/components/Tapiceria/TapiceriaComponent47";
 import TapiceriaComponent48 from "@/components/Tapiceria/TapiceriaComponent48";
 import GaleriaTapiceria from "@/components/Galerias/TapiceriaGaleria";
+import TapiceriaComponent49 from "@/components/Tapiceria/TapiceriaComponent49";
+import GaleriaImport3 from "@/components/Galerias/GaleriaImport3";
+import ClavillosIndex from "@/components/Index/ClavillosIndex";
+import ClavijosComponent50 from "@/components/Clavijos/ClavijosComponent50";
+import TapacantosSection from "@/components/Cantos/TapacantosSection";
 export default function Home() {
   return (
     <>
@@ -130,6 +135,11 @@ export default function Home() {
         <TapiceriaComponent47 />
         <TapiceriaComponent48 />
         <GaleriaTapiceria />
+        <TapiceriaComponent49 />
+        <GaleriaImport3 />
+        <ClavillosIndex />
+        <ClavijosComponent50 />
+        <TapacantosSection />
       </div>
     </>
   );

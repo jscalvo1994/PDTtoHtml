@@ -19,6 +19,7 @@ export default function AccesoriosComponent45() {
                         alt="Cerradura pomo alcoba"
                         width={680}
                         height={500}
+                        style={{ maxWidth: '100%', height: 'auto' }}
                     />
                 </div>
 
@@ -55,6 +56,7 @@ export default function AccesoriosComponent45() {
                         alt="Cerradura técnica"
                         width={420}
                         height={400}
+                        style={{ maxWidth: '100%', height: 'auto' }}
                     />
                 </div>
             </div>
