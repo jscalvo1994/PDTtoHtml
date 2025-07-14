@@ -1,0 +1,393 @@
+/* =======================
+   BASE TAPICERÍA SECTIONS STYLES
+   ======================= */
+
+.tapiceria-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    font-family: Arial, sans-serif;
+    gap: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+}
+
+/* -----------------------
+   Parte izquierda
+------------------------ */
+.tapiceria-left {
+    flex: 2;
+    min-width: 300px;
+    padding-right: 2rem;
+}
+
+.tapiceria-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.tapiceria-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.tapiceria-header p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.tapiceria-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.tapiceria-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.tapiceria-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.tapiceria-card :global(img) {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tapiceria-details h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.tapiceria-details ul,
+.tapiceria-card ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    color: #000;
+}
+
+.tapiceria-details li,
+.tapiceria-card li {
+    margin-bottom: 0.4rem;
+}
+
+/* -----------------------
+   Imagen ambiente
+------------------------ */
+.tapiceria-image-container {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 5 / 7;
+    overflow: hidden;
+}
+
+.tapiceria-image-container :global(img) {
+    width: 100%;
+    height: auto;
+    max-height: 720px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* -----------------------
+   Tablas
+------------------------ */
+.tapiceria-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+}
+
+.tapiceria-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+.tapiceria-table td {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+/* -----------------------
+   Parte derecha
+------------------------ */
+.tapiceria-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* -----------------------
+   Footer
+------------------------ */
+.tapiceria-footer {
+    margin-top: auto;
+    font-size: 0.75rem;
+    color: #888;
+    text-align: right;
+    width: 100%;
+}
+
+/* -----------------------
+   Responsive
+------------------------ */
+@media (max-width: 992px) {
+    .tapiceria-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .tapiceria-left,
+    .tapiceria-right {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tapiceria-grid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tapiceria-card {
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 2rem;
+    }
+
+    .tapiceria-image-container {
+        display: none;
+    }
+
+    .tapiceria-footer {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .tapiceria-header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .tapiceria-header p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .tapiceria-table {
+        font-size: 0.75rem;
+    }
+
+    .tapiceria-details ul,
+    .tapiceria-card ul {
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    .tapiceria-footer {
+        font-size: 0.65rem;
+    }
+
+    .tapiceria-image-container {
+        display: none;
+    }
+}
+
+/* =======================
+   END OF TAPICERÍA SECTIONS STYLES
+   ======================= */
+
+/* =======================
+   TAPICERÍA COMPONENT CENTRADO
+   ======================= */
+
+.tapiceria-centro {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+}
+
+/* TÍTULO */
+.tapiceria-centro-header {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.tapiceria-centro-header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.tapiceria-centro-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.tapiceria-centro-header p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.tapiceria-centro-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* CUERPO: CENTRADO Y CUADRADO */
+.tapiceria-centro-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.cuadro-izquierdo,
+.cuadro-derecho {
+    flex: 1 1 0;
+    aspect-ratio: 1 / 1;
+    min-width: 300px;
+    max-width: 540px;
+    max-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+/* Imagen izquierda y derecha */
+.tapiceria-imagen,
+.tapiceria-ambiente {
+    flex: 1.1;
+    overflow: hidden;
+}
+
+.tapiceria-imagen img,
+.tapiceria-ambiente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tabla */
+.tapiceria-tabla {
+    flex: 0.6;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.tapiceria-tabla th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+.tapiceria-tabla td {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+}
+
+/* Descripción */
+.tapiceria-descripcion {
+    flex: 0.6;
+    padding: 1rem;
+    color: #000;
+    overflow: hidden;
+}
+
+.tapiceria-descripcion h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.tapiceria-descripcion ul {
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    list-style: disc;
+    margin: 0;
+}
+
+/* Footer */
+.tapiceria-footer {
+    text-align: right;
+    padding: 0.8rem 1rem;
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .tapiceria-centro-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadro-izquierdo,
+    .cuadro-derecho {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: auto;
+        max-height: none;
+    }
+
+    .tapiceria-imagen,
+    .tapiceria-ambiente {
+        height: auto;
+        aspect-ratio: auto;
+    }
+
+    .tapiceria-imagen img,
+    .tapiceria-ambiente img {
+        height: auto;
+    }
+}
