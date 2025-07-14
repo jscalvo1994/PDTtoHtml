@@ -61,6 +61,7 @@ import AccesoriosComponent46 from "@/components/Accesorios/AccesoriosComponent46
 import TapiceriaIndex from "@/components/Index/TapiceriaIndex";
 import TapiceriaComponent47 from "@/components/Tapiceria/TapiceriaComponent47";
 import TapiceriaComponent48 from "@/components/Tapiceria/TapiceriaComponent48";
+import GaleriaTapiceria from "@/components/Galerias/TapiceriaGaleria";
 export default function Home() {
   return (
     <>
@@ -128,6 +129,7 @@ export default function Home() {
         <TapiceriaIndex />
         <TapiceriaComponent47 />
         <TapiceriaComponent48 />
+        <GaleriaTapiceria />
       </div>
     </>
   );

@@ -1,0 +1,91 @@
+/* =======================
+   TAPICERIA GALERÍA
+   ======================= */
+
+.tapiceria-galeria-container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+/* LADO IZQUIERDO */
+.tapiceria-galeria-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.tapiceria-img {
+    z-index: 0;
+}
+
+.tapiceria-left-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.tapiceria-left-text h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.tapiceria-left-text p {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+
+/* LADO DERECHO */
+.tapiceria-galeria-right {
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Título superior */
+.tapiceria-right-header h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.tapiceria-right-header p {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Cuadro con imagen */
+.tapiceria-right-card {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 80%;
+    /* Cuadro perfecto */
+    margin-top: 1rem;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.tapiceria-right-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* QR en esquina inferior izquierda */
+.tapiceria-qr {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+/* Margen inferior de cierre visual */
+.tapiceria-bottom-margin {
+    flex-grow: 1;
+}
