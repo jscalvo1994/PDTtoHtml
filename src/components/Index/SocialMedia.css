@@ -55,9 +55,11 @@
 .social-website {
     margin-top: auto;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-family: Arial, sans-serif;
+    word-break: break-word;
 }
+
 
 /* Imagen derecha */
 .social-media-right {
@@ -91,13 +93,13 @@
 }
 
 .social-image-icon {
+    width: 64px;
+    height: 64px;
     margin-right: 0.8rem;
-    width: 24px;
-    height: 24px;
     object-fit: contain;
     filter: brightness(0) invert(1);
-    /* Blanco sin importar fondo */
 }
+
 
 @media (max-width: 768px) {
     .social-media {

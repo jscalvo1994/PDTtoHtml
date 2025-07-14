@@ -48,17 +48,28 @@
 }
 
 .hero-top-center {
-    width: 70%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    display: flex;
+    margin-top: 35%;
 }
 
 .hero-logo-image {
     object-fit: contain;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.15));
 }
+
+.hero-logo-image.hero-center-logo {
+    object-fit: contain;
+    position: relative;
+    top: -10vh;
+    /* Desbordamiento vertical */
+    height: 110%;
+    /* Hace que se vea más grande */
+    width: auto;
+    max-height: none;
+}
+
 
 .hero-top-right {
     width: 15%;
@@ -131,6 +142,15 @@
     .hero-section-top {
         flex-direction: column;
         height: auto;
+    }
+
+    .hero-logo-image.hero-center-logo {
+        position: static;
+        height: auto;
+        width: 80vw;
+        /* Aumenta el ancho relativo al viewport */
+        max-width: 90vw;
+        top: 0;
     }
 
     .hero-top-left {

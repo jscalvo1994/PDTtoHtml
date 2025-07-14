@@ -36,7 +36,7 @@ export default function Hero() {
               src="/logo1.png"
               alt="Logo central metálico"
               fill
-              className="hero-logo-image"
+              className="hero-logo-image hero-center-logo"
             />
           </div>
 
