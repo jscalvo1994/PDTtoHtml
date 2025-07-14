@@ -1,204 +1,169 @@
 /* =======================
    ACCESORIOS COMPONENT 44
-   ======================= */
+========================= */
 
-.accesorios44-section {
+.accesorios44-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 3rem 2rem;
-    font-family: Arial, sans-serif;
     gap: 2rem;
-    height: 75vh;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    align-items: stretch;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-/* -----------------------
-   IZQUIERDA: imagen técnica
------------------------- */
+/* COLUMNA IZQUIERDA */
 .accesorios44-left {
-    flex: 1.3;
-    min-width: 300px;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
+    justify-content: space-between;
+    min-width: 300px;
 }
 
-.accesorios44-left img {
-    max-width: 100%;
+.accesorios44-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.accesorios44-header h1 span {
+    font-weight: normal;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.5rem;
+}
+
+.accesorios44-header p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.accesorios44-header hr {
+    margin-top: 1rem;
+    border: none;
+    border-top: 2px solid #000;
+}
+
+.accesorios44-diagram {
+    margin-top: 2rem;
+}
+
+.accesorios44-diagram img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
-/* -----------------------
-   DERECHA: información técnica
------------------------- */
+/* COLUMNA DERECHA */
 .accesorios44-right {
     flex: 1;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    height: 100%;
+    justify-content: space-between;
+    min-width: 300px;
 }
 
-/* Parte superior: imagen + datos */
-.accesorios44-top {
+/* Imagen + Tabla + Lista */
+.accesorios44-producto {
     display: flex;
     gap: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 4rem;
 }
 
-.accesorios44-imgbox {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.accesorios44-imgbox img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
+.accesorios44-producto-img img {
+    width: 250px;
+    height: 250px;
     object-fit: contain;
+    display: block;
+    margin-top: 20%;
 }
 
-.accesorios44-info {
-    color: #000;
-    flex: 2;
-}
-
-.accesorios44-info h3 {
+.accesorios44-producto-info h3 {
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    color: #000;
 }
 
-/* Tabla */
 .accesorios44-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
-    font-size: 0.85rem;
 }
 
 .accesorios44-table th {
     background-color: #000;
     color: #fff;
-    padding: 0.6rem 1rem;
     text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
 }
 
 .accesorios44-table td {
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 1rem;
     border: 1px solid #ccc;
-    color: #000;
+    font-size: 0.85rem;
+    color: #333;
 }
 
-/* Lista */
-.accesorios44-list {
+.accesorios44-producto-info ul {
     list-style: disc;
-    padding-left: 1.2rem;
-    color: #000;
-    font-size: 0.9rem;
-}
-
-.accesorios44-list li {
-    margin-bottom: 0.4rem;
-}
-
-/* Parte inferior */
-.accesorios44-bottom hr {
-    border: none;
-    border-top: 1px solid #aaa;
-    margin: 1rem 0;
-}
-
-.accesorios44-description {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.accesorios44-description p {
-    flex: 1;
+    padding-left: 1rem;
+    margin: 0;
     color: #444;
-    line-height: 1.5;
     font-size: 0.9rem;
 }
 
-.accesorios44-meta {
+.accesorios44-producto-info li {
+    margin-bottom: 0.3rem;
+}
+
+/* Descripción y QR */
+.accesorios44-descripcion {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    color: #444;
+}
+
+.accesorios44-descripcion p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.accesorios44-qr {
+    display: flex;
     align-items: center;
-    font-size: 0.75rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
     color: #888;
 }
 
-/* =======================
-   RESPONSIVE - MÓVILES
-======================= */
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
-    .accesorios44-section {
+    .accesorios44-wrapper {
         flex-direction: column;
-        height: auto;
         padding: 2rem 1.5rem;
     }
 
-    .accesorios44-left,
-    .accesorios44-right {
+    .accesorios44-producto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accesorios44-producto-info {
         width: 100%;
-        height: auto;
     }
-
-    .accesorios44-top {
-        flex-direction: column;
-    }
-
-    .accesorios44-imgbox {
-        justify-content: center;
-    }
-
-    .accesorios44-description {
-        flex-direction: column;
-    }
-
-    .accesorios44-meta {
-        margin-top: 1rem;
-    }
-}
-
-.accesorios42-header h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000;
-}
-
-.accesorios42-header h1 span {
-    font-weight: 400;
-    font-style: italic;
-    color: #888;
-    margin-left: 0.4rem;
-}
-
-.accesorios42-header p {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.accesorios42-header hr {
-    margin-top: 1rem;
-    border-top: 2px solid #000;
-    width: 100%;
-}
-
-.accesorios42-grid {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
 }

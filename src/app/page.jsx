@@ -56,6 +56,9 @@ import AccesoriosComponent41 from "@/components/Accesorios/AccesoriosComponent41
 import AccesoriosComponent42 from "@/components/Accesorios/AccesoriosCompoent42.jsx";
 import AccesoriosComponent43 from "@/components/Accesorios/AccesoriosComponent43";
 import AccesoriosComponent44 from "@/components/Accesorios/AccesoriosComponent44";
+import AccesoriosComponent45 from "@/components/Accesorios/AccesoriosComponent45";
+import AccesoriosComponent46 from "@/components/Accesorios/AccesoriosComponent46";
+import TapiceriaIndex from "@/components/Index/TapiceriaIndex";
 export default function Home() {
   return (
     <>
@@ -118,6 +121,9 @@ export default function Home() {
         <AccesoriosComponent42 />
         <AccesoriosComponent43 />
         <AccesoriosComponent44 />
+        <AccesoriosComponent45 />
+        <AccesoriosComponent46 />
+        <TapiceriaIndex />
       </div>
     </>
   );

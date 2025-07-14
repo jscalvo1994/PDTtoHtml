@@ -1,0 +1,63 @@
+/* =======================
+   TAPICERIA INDEX SECTION
+   ======================= */
+
+@import './IndexSection.css';
+
+/* Se reutilizan todas las clases: index-section, index-left, index-right, etc. */
+
+/* Ajustes específicos para tapicería (bloque informativo) */
+.index-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.index-section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Reutiliza .index-content y .index-column */
+
+.tapiceria-info {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.tapiceria-link {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.tapiceria-link:hover {
+    color: #e67e22;
+}
+
+.tapiceria-contacto {
+    font-size: 0.9rem;
+    color: #555;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive (si no lo tienes ya) */
+@media (max-width: 768px) {
+    .index-content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .index-column {
+        width: 100%;
+    }
+}

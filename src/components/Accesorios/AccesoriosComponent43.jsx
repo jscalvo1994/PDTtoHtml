@@ -57,7 +57,7 @@ export default function AccesoriosComponent43() {
                         <Image
                             src={item.img}
                             alt={item.titulo}
-                            width={220}
+                            width={680}
                             height={120}
                         />
 

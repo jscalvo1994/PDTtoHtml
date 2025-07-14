@@ -2,20 +2,20 @@
 import Image from 'next/image';
 import './AccesoriosComponent44.css';
 
-export default function AccesoriosComponent44() {
+export default function AccesoriosComponent46() {
     return (
         <section className="accesorios44-wrapper">
             {/* COLUMNA IZQUIERDA */}
             <div className="accesorios44-left">
                 <div className="accesorios44-header">
-                    <h1>ACCESORIOS <span>/ Galería</span></h1>
+                    <h1>ACCESORIOS <span>/ CERRADURAS</span></h1>
                     <p>Contenido general</p>
                     <hr />
                 </div>
                 <div className="accesorios44-diagram">
                     <Image
-                        src="/accesorios/accesorios56.png"
-                        alt="Diagrama técnico"
+                        src="/accesorios/accesorios60.png"
+                        alt="Imagen principal cerradura"
                         width={500}
                         height={500}
                     />
@@ -28,15 +28,15 @@ export default function AccesoriosComponent44() {
                 <div className="accesorios44-producto">
                     <div className="accesorios44-producto-img">
                         <Image
-                            src="/accesorios/accesorios57.png"
-                            alt="Producto Push To Open"
-                            width={150}
-                            height={150}
+                            src="/accesorios/accesorios61.png"
+                            alt="Cerradura detalle"
+                            width={250}
+                            height={250}
                         />
                     </div>
 
                     <div className="accesorios44-producto-info">
-                        <h3>Push To Open Magnético</h3>
+                        <h3>Cerradura Palanca Alcoba / Baño</h3>
 
                         <table className="accesorios44-table">
                             <thead>
@@ -47,20 +47,20 @@ export default function AccesoriosComponent44() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Deslizador Puntilla</td>
-                                    <td>1.000 UNIDADES</td>
+                                    <td>Cerradura palanca alcoba/baño</td>
+                                    <td>24 UNIDADES</td>
                                 </tr>
                             </tbody>
                         </table>
 
                         <ul>
-                            <li><strong>Tipo:</strong> Topes</li>
-                            <li><strong>Tamaño:</strong> 9cm</li>
-                            <li><strong>Material:</strong> Metal, plástico</li>
-                            <li><strong>Marca:</strong> MZ</li>
+                            <li><strong>Tipo de pestillo:</strong> entero</li>
+                            <li><strong>Acabado:</strong> Cromado</li>
+                            <li><strong>modulos (6):</strong> aberturas de 35mm a 45mm de espesor.</li>
+                            <li><strong>Accesorios incluidos:</strong> Tornillos</li>
                         </ul>
-                        <div className="accesorios44-qr">
 
+                        <div className="accesorios44-qr">
                             <Image
                                 src="/galeria/qr-example.png"
                                 alt="Código QR"
@@ -69,19 +69,16 @@ export default function AccesoriosComponent44() {
                             />
                         </div>
                     </div>
-
                 </div>
 
-
-
-                {/* Descripción + QR */}
+                {/* Descripción + código */}
                 <div className="accesorios44-descripcion">
                     <p>
-                        Pestillos magnéticos para puerta de gabinete de 2 pestillos magnéticos por puerta de cocina.<br />
-                        Cierre de puerta de gabinete para sistemas sin manija.<br />
-                        Cierre de puerta de empuje ideal para accesorios de gabinete.
+                        Sistema de seguridad práctico y resistente, ideal para puertas interiores y exteriores. <br />
+                        Su mecanismo de palanca permite un cierre firme y fácil de operar. <br />
+                        Fabricado con materiales duraderos, ofrece protección y estilo en un solo producto.
                     </p>
-                    <span>Accesorios/041</span>
+                    <span>Accesorios-Cerraduras/043</span>
                 </div>
             </div>
         </section>
