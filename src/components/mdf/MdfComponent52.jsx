@@ -14,11 +14,15 @@ const MdfComponent52 = () => {
       </div>
 
       <div className="mdf52-right">
-        <div className="mdf52-header">
+        <div className="mdf53-header">
           <h3>MDF <span>/</span></h3>
-          <p className="mdf52-sub">Galería</p>
-          <p className="mdf52-subsub">Contenido general</p>
+          <div className='mdf53-header-texts'>
+            <p className="mdf53-sub">Galería</p>
+            <p className="mdf53-subsub">Contenido general</p>
+          </div>
+
         </div>
+
         <hr />
         <div className="mdf52-thumbs-row">
           <div className="mdf52-three-tables">

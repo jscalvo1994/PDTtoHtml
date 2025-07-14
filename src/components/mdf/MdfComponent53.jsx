@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Image from 'next/image';
 import './MdfComponent53.css';
@@ -6,22 +5,18 @@ import './MdfComponent53.css';
 const MdfComponent53 = () => {
   return (
     <section className="mdf53-container">
-      {/* LADO IZQUIERDO (IMAGEN UNIFICADA) */}
-      <div className="mdf53-left">
-        <Image
-          src="/mdf/mdf84.png"
-          alt="Vistas MDF"
-          width={180}
-          height={520}
-        />
-      </div>
+      {/* LADO IZQUIERDO (IMAGEN DE FONDO) */}
+      <div className="mdf53-left"></div>
 
       {/* LADO DERECHO (CONTENIDO) */}
       <div className="mdf53-right">
         <div className="mdf53-header">
           <h3>MDF <span>/</span></h3>
-          <p className="mdf53-sub">Galería</p>
-          <p className="mdf53-subsub">Contenido general</p>
+          <div className='mdf53-header-texts'>
+            <p className="mdf53-sub">Galería</p>
+            <p className="mdf53-subsub">Contenido general</p>
+          </div>
+
         </div>
 
         <h4>MDF 2,7 MM</h4>

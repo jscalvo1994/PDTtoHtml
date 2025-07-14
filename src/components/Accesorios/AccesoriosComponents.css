@@ -485,7 +485,22 @@
 /* =======================
    BASE ACCESORIOS SECTIONS UNIFIED STYLES
    ======================= */
+/* =======================
+   GLOBAL RESET
+======================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+body {
+    overflow-x: hidden;
+}
+
+/* =======================
+   BASE ACCESORIOS SECTIONS UNIFIED STYLES
+======================= */
 .accesorios-section {
     display: flex;
     flex-wrap: wrap;
@@ -493,17 +508,16 @@
     padding: 3rem 2rem;
     font-family: Arial, sans-serif;
     gap: 2rem;
-    box-sizing: border-box;
     margin-bottom: 4rem;
-    /* separación entre componentes */
-    height: 80vh;
+    min-height: 80vh;
 }
 
 /* -----------------------
    Parte izquierda común
 ------------------------ */
 .accesorios-left {
-    flex: 2;
+    flex: 1 1 100%;
+    max-width: 100%;
     min-width: 300px;
     padding-right: 2rem;
 }
@@ -538,17 +552,21 @@
     gap: 2rem;
     margin-top: 2rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .accesorios-card {
     flex: 1;
     min-width: 280px;
     font-size: 0.9rem;
+    max-width: 100%;
 }
 
 .accesorios-card img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .accesorios-details h4 {
@@ -578,6 +596,8 @@
     border-collapse: collapse;
     margin: 1rem 0;
     font-size: 0.85rem;
+    display: block;
+    overflow-x: auto;
 }
 
 .accesorios-table th {
@@ -597,7 +617,8 @@
    Parte derecha común
 ------------------------ */
 .accesorios-right {
-    flex: 1;
+    flex: 1 1 100%;
+    max-width: 100%;
     min-width: 300px;
     display: flex;
     justify-content: center;
@@ -686,14 +707,17 @@
     }
 }
 
+/* -----------------------
+   Reverse Flex
+------------------------ */
 .accesorios-reverse {
+    display: flex;
     flex-direction: row-reverse;
-    margin-right: -5rem;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 992px) {
     .accesorios-reverse {
         flex-direction: column;
-        /* se reinvierte automáticamente en móviles */
     }
 }
