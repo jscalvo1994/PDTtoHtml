@@ -314,16 +314,33 @@
 .accesorio37-section {
     width: 100%;
     background-color: #f9f9f9;
-    padding: 3rem 4rem;
+    padding: 4rem 5rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     font-family: Arial, sans-serif;
 }
 
+/* -----------------------
+   Encabezado
+------------------------ */
+.accesorio37-header {
+    width: 100%;
+    text-align: left;
+}
+
+.accesorio37-header h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
 .accesorio37-header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
+    color: #000;
+    line-height: 1.2;
 }
 
 .accesorio37-header h1 span {
@@ -333,64 +350,82 @@
     margin-left: 0.4rem;
 }
 
-.accesorio37-header p {
-    color: #666;
-    font-size: 0.9rem;
-    margin-top: 0.3rem;
-}
-
 .accesorio37-header hr {
-    margin-top: 1rem;
     border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
 }
 
-/* Contenido principal */
-.accesorio37-body {
+/* -----------------------
+   Contenido principal
+------------------------ */
+.accesorio37-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
-/* Columna izquierda */
-.accesorio37-left {
-    flex: 1;
-    min-width: 300px;
-    max-width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.accesorio37-images {
-    display: flex;
-    gap: 1rem;
-}
-
-.accesorio37-text h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.accesorio37-text ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 0.95rem;
-}
-
-.accesorio37-text li {
-    margin-bottom: 0.5rem;
-}
-
-/* Columna derecha */
+.accesorio37-left,
 .accesorio37-right {
     flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accesorio37-left img,
+.accesorio37-right img {
+    max-width: 100%;
+    width: 560px;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+/* -----------------------
+   Columna central (centrado)
+------------------------ */
+.accesorio37-middle {
+    flex: 1.5;
     min-width: 300px;
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.accesorio37-middle h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.accesorio37-middle ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: left;
+}
+
+.accesorio37-middle ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+/* -----------------------
+   Columna derecha con tabla e imagen técnica
+------------------------ */
+.accesorio37-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .accesorio37-table {
@@ -402,51 +437,261 @@
 .accesorio37-table th {
     background-color: #000;
     color: #fff;
-    padding: 0.6rem 1rem;
     text-align: left;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
 }
 
 .accesorio37-table td {
     border: 1px solid #ccc;
     padding: 0.6rem 1rem;
+    color: #000;
 }
 
-/* Plano técnico */
-.accesorio37-plano img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Pie de página */
-.accesorio37-footer {
+/* -----------------------
+   Subtítulo final
+------------------------ */
+.accesorio37-label {
     font-size: 0.75rem;
-    color: #888;
+    color: #999;
     text-align: right;
+    width: 100%;
 }
 
 /* =======================
    RESPONSIVE
-   ======================= */
-
-@media screen and (max-width: 768px) {
-    .accesorio37-body {
+======================= */
+@media (max-width: 992px) {
+    .accesorio37-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    .accesorio37-left,
-    .accesorio37-right {
-        max-width: 100%;
+    .accesorio37-middle {
+        text-align: center;
+        align-items: center;
     }
 
-    .accesorio37-images {
-        justify-content: center;
-        flex-wrap: wrap;
+    .accesorio37-middle ul {
+        text-align: left;
     }
 
-    .accesorio37-footer {
+    .accesorio37-label {
         text-align: left;
         margin-top: 2rem;
+    }
+}
+
+/* =======================
+   BASE ACCESORIOS SECTIONS UNIFIED STYLES
+   ======================= */
+
+.accesorios-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    font-family: Arial, sans-serif;
+    gap: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+    /* separación entre componentes */
+}
+
+/* -----------------------
+   Parte izquierda común
+------------------------ */
+.accesorios-left {
+    flex: 2;
+    min-width: 300px;
+    padding-right: 2rem;
+}
+
+.accesorios-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.accesorios-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.accesorios-header p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.accesorios-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.accesorios-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.accesorios-card {
+    flex: 1;
+    min-width: 280px;
+    font-size: 0.9rem;
+}
+
+.accesorios-card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.accesorios-details h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.accesorios-details ul,
+.accesorios-card ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    color: #000;
+}
+
+.accesorios-details li,
+.accesorios-card li {
+    margin-bottom: 0.4rem;
+}
+
+/* -----------------------
+   Tablas
+------------------------ */
+.accesorios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+}
+
+.accesorios-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+.accesorios-table td {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+/* -----------------------
+   Parte derecha común
+------------------------ */
+.accesorios-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* -----------------------
+   Footer
+------------------------ */
+.accesorios-footer {
+    margin-top: auto;
+    font-size: 0.75rem;
+    color: #888;
+    text-align: right;
+    width: 100%;
+}
+
+/* -----------------------
+   Responsive
+------------------------ */
+@media (max-width: 992px) {
+    .accesorios-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .accesorios-left,
+    .accesorios-right {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .accesorios-grid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .accesorios-card {
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 2rem;
+    }
+
+    .accesorios-right img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: contain;
+        margin-top: 2rem;
+    }
+
+    .accesorios-footer {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .accesorios-header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .accesorios-header p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .accesorios-table {
+        font-size: 0.75rem;
+    }
+
+    .accesorios-details ul,
+    .accesorios-card ul {
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    .accesorios-footer {
+        font-size: 0.65rem;
+    }
+}
+
+.accesorios-reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+    .accesorios-reverse {
+        flex-direction: column;
+        /* se reinvierte automáticamente en móviles */
     }
 }

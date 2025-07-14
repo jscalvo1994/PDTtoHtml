@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import './AccesoriosComponents.css';
 
-export default function AccesorioComponent37() {
+export default function AccesorioComponent39() {
     return (
         <section className="accesorio37-section">
             <div className="accesorio37-header">
@@ -15,10 +15,10 @@ export default function AccesorioComponent37() {
                 {/* Imagen izquierda */}
                 <div className="accesorio37-left">
                     <Image
-                        src="/accesorios/accesorios36.png"
+                        src="/accesorios/accesorios40_resized.png"
                         alt="Soporte Tubo Redondo"
-                        width={320}
-                        height={400}
+                        width={170}
+                        height={200}
                     />
                 </div>
 
@@ -51,10 +51,10 @@ export default function AccesorioComponent37() {
                         </tbody>
                     </table>
                     <Image
-                        src="/accesorios/accesorios37.png"
+                        src="/accesorios/accesorios41.png"
                         alt="Plano técnico Soporte Tubo Redondo"
-                        width={500}
-                        height={900}
+                        width={250}
+                        height={400}
                     />
                 </div>
             </div>

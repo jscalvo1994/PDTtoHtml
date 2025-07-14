@@ -48,6 +48,14 @@ import IndexSection3 from "@/components/Index/IndexSection3";
 import AccesoriosComponent35 from "@/components/Accesorios/AccesoriosComponent35.jsx";
 import AccesoriosComponent36 from "@/components/Accesorios/AccesoriosComponent36";
 import AccesorioComponent37 from "@/components/Accesorios/AccesorioComponent37.jsx";
+import AccesorioComponent38 from "@/components/Accesorios/AccesorioComponent38";
+import AccesorioComponent39 from "@/components/Accesorios/AccesorioComponent39.jsx";
+import GaleriaAccesorios from "@/components/Galerias/GaleriaAccesorios";
+import AccesoriosComponent40 from "@/components/Accesorios/AccesoriosComponent40";
+import AccesoriosComponent41 from "@/components/Accesorios/AccesoriosComponent41.jsx";
+import AccesoriosComponent42 from "@/components/Accesorios/AccesoriosCompoent42.jsx";
+import AccesoriosComponent43 from "@/components/Accesorios/AccesoriosComponent43";
+import AccesoriosComponent44 from "@/components/Accesorios/AccesoriosComponent44";
 export default function Home() {
   return (
     <>
@@ -102,6 +110,14 @@ export default function Home() {
         <AccesoriosComponent35 />
         <AccesoriosComponent36 />
         <AccesorioComponent37 />
+        <AccesorioComponent38 />
+        <AccesorioComponent39 />
+        <GaleriaAccesorios />
+        <AccesoriosComponent40 />
+        <AccesoriosComponent41 />
+        <AccesoriosComponent42 />
+        <AccesoriosComponent43 />
+        <AccesoriosComponent44 />
       </div>
     </>
   );

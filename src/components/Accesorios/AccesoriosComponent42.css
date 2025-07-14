@@ -1,0 +1,261 @@
+/* =======================
+   ACCESORIOS COMPONENT 42
+   ======================= */
+
+.accesorios42-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    font-family: Arial, sans-serif;
+    gap: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+}
+
+/* -----------------------
+   Izquierda
+------------------------ */
+.accesorios42-left {
+    flex: 2;
+    min-width: 300px;
+    padding-right: 2rem;
+}
+
+.accesorios42-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.accesorios42-header h1 span {
+    font-weight: 400;
+    font-style: italic;
+    color: #888;
+    margin-left: 0.4rem;
+}
+
+.accesorios42-header p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.accesorios42-header hr {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.accesorios42-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.accesorios42-card {
+    flex: 1;
+    min-width: 240px;
+    font-size: 0.9rem;
+}
+
+.accesorios42-card ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    color: #000;
+}
+
+.accesorios42-card li {
+    margin-bottom: 0.4rem;
+}
+
+/* -----------------------
+   Tablas
+------------------------ */
+.accesorios42-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+}
+
+.accesorios42-table th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    text-align: left;
+}
+
+.accesorios42-table td {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+/* -----------------------
+   Parte derecha
+------------------------ */
+.accesorios42-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Parte superior */
+.accesorios42-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.accesorios42-imgbox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accesorios42-info {
+    flex: 2;
+    min-width: 250px;
+}
+
+.accesorios42-info h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.accesorios42-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    color: #000;
+}
+
+.accesorios42-list li {
+    margin-bottom: 0.4rem;
+}
+
+/* Parte inferior */
+.accesorios42-bottom {
+    margin-top: 2rem;
+}
+
+.accesorios42-bottom hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin-bottom: 1rem;
+}
+
+.accesorios42-description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.accesorios42-description p {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.accesorios42-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media screen and (max-width: 992px) {
+    .accesorios42-section {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+
+    .accesorios42-left,
+    .accesorios42-right {
+        width: 100%;
+    }
+
+    .accesorios42-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accesorios42-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .accesorios42-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .accesorios42-info {
+        width: 100%;
+    }
+
+    .accesorios42-description {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .accesorios42-description p {
+        width: 100%;
+    }
+
+    .accesorios42-meta {
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .accesorios42-meta span {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .accesorios42-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .accesorios42-header h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .accesorios42-header p {
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .accesorios42-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .accesorios42-table {
+        font-size: 0.75rem;
+    }
+
+    .accesorios42-list {
+        font-size: 0.8rem;
+    }
+
+    .accesorios42-meta span {
+        font-size: 0.7rem;
+    }
+}

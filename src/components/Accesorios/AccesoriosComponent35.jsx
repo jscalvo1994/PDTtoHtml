@@ -10,6 +10,7 @@ export default function AccesoriosComponent35() {
             <div className="accesorios31-header">
                 <h1>ACCESORIOS / Galería</h1>
                 <p>Contenido general</p>
+                <hr />
             </div>
 
             <div className="accesorios31-body">
