@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import './TapacantosSection.css';
 
-const TapacantosSection = () => {
+const CantosComponent51 = () => {
     return (
         <section className="tapacantos-section">
             <div className="container-tapacantos">
@@ -88,4 +88,4 @@ const TapacantosSection = () => {
     );
 };
 
-export default TapacantosSection;
+export default CantosComponent51;

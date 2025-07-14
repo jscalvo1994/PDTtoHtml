@@ -66,7 +66,7 @@ import TapiceriaComponent49 from "@/components/Tapiceria/TapiceriaComponent49";
 import GaleriaImport3 from "@/components/Galerias/GaleriaImport3";
 import ClavillosIndex from "@/components/Index/ClavillosIndex";
 import ClavijosComponent50 from "@/components/Clavijos/ClavijosComponent50";
-import TapacantosSection from "@/components/Cantos/TapacantosSection";
+import CantosComponent51 from "@/components/Cantos/CantosComponent51";
 export default function Home() {
   return (
     <>
@@ -139,7 +139,7 @@ export default function Home() {
         <GaleriaImport3 />
         <ClavillosIndex />
         <ClavijosComponent50 />
-        <TapacantosSection />
+        <CantosComponent51 />
       </div>
     </>
   );

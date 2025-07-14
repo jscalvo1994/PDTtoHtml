@@ -1,26 +1,164 @@
-/* Nueva fila para tabla + imagen */
-.table-image-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
+/* =======================
+   CLAVIJOS COMPONENT 50
+   ======================= */
 
-.table-image-wrapper .tapacantos-table {
-    flex: 1 1 60%;
-    min-width: 280px;
-}
-
-.table-image-wrapper .side-image-wrapper {
-    flex: 1 1 35%;
+.clavijos50-wrapper {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
 }
 
-.table-image-wrapper .side-image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+.clavijos50-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+}
+
+/* IZQUIERDA */
+.clavijos50-left {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.clavijos50-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.clavijos50-title span {
+    font-weight: normal;
+    font-style: italic;
+    color: #000;
+}
+
+.clavijos50-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+/* DERECHA */
+.clavijos50-right {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clavijos50-top-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* A: Imagen */
+.clavijos50-a {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* B: Contenido */
+.clavijos50-b {
+    width: 50%;
+}
+
+.clavijos50-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.clavijos50-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.clavijos50-table th,
+.clavijos50-table td {
+    border: 1px solid #ddd;
+    padding: 0.4rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.clavijos50-description {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* C: Línea + texto */
+.clavijos50-c {
+    margin-top: 1rem;
+}
+
+.clavijos50-c hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+.clavijos50-final-text {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.clavijos50-footer {
+    font-size: 0.75rem;
+    color: #999;
+    text-align: right;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+
+@media (max-width: 768px) {
+    .clavijos50-wrapper {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .clavijos50-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .clavijos50-left,
+    .clavijos50-right {
+        width: 100%;
+    }
+
+    .clavijos50-top-content {
+        flex-direction: column;
+    }
+
+    .clavijos50-a,
+    .clavijos50-b {
+        width: 100%;
+    }
+
+    .clavijos50-title,
+    .clavijos50-subtitle {
+        text-align: left;
+    }
+
+    .clavijos50-footer {
+        text-align: left;
+    }
 }
